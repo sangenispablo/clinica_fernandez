@@ -1,35 +1,344 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clinica Fernández</title>
 
-    <!-- Bootstrap 5.1.3 para desarrollo para produccion usar el min -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Nuestros estilos -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <!-- preloader vamos a usar ??? -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
-    <!-- header, se divide en dos partes, 1-Header-Top y 2-el NavBar -->
+        <div class="container">
 
-    <!-- Carrusel -->
+            <a class="navbar-brand" href="index.html">Clinica Fernández</a>
 
-    <!-- About -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- Especialidades -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Usuario
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Configuracion</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Seccion de Servicios -->
+    <section class="container" id="servicios">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3">Services
+            <small>Subheading</small>
+        </h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Services</li>
+        </ol>
+
+        <!-- Image Header -->
+        <img class="img-fluid rounded mb-4" src="http://placehold.it/1200x300" alt="">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <h4 class="card-header">Card Title</h4>
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                            necessitatibus neque.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <h4 class="card-header">Card Title</h4>
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam
+                            eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque
+                            exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <h4 class="card-header">Card Title</h4>
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                            necessitatibus neque.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </section>
+
+
+    <!-- Seccion de About -->
+    <section class="container" id="about">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3">About
+            <small>Subheading</small>
+        </h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">About</li>
+        </ol>
+
+        <!-- Intro Content -->
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h2>About Modern Business</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur
+                    similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem
+                    perferendis dicta dolorem non blanditiis ex fugiat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum
+                    voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus
+                    reprehenderit dolorum!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis
+                    ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti
+                    necessitatibus perspiciatis quis?</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Team Members -->
+        <h2>Our Team</h2>
+
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Team Member</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Position</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut
+                            mollitia eum ipsum fugiat odio officiis odit.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">name@example.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Team Member</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Position</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut
+                            mollitia eum ipsum fugiat odio officiis odit.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">name@example.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Team Member</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Position</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut
+                            mollitia eum ipsum fugiat odio officiis odit.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">name@example.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Our Customers -->
+        <h2>Our Customers</h2>
+        <div class="row">
+            <div class="col-lg-2 col-sm-4 mb-4">
+                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+            </div>
+            <div class="col-lg-2 col-sm-4 mb-4">
+                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+            </div>
+            <div class="col-lg-2 col-sm-4 mb-4">
+                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+            </div>
+            <div class="col-lg-2 col-sm-4 mb-4">
+                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+            </div>
+            <div class="col-lg-2 col-sm-4 mb-4">
+                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+            </div>
+            <div class="col-lg-2 col-sm-4 mb-4">
+                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </section>
+
 
     <!-- Contacto -->
+    <section class="container" id="contacto">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3">Contact
+            <small>Subheading</small>
+        </h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Contact</li>
+        </ol>
+
+        <!-- Content Row -->
+        <div class="row">
+            <!-- Map Column -->
+            <div class="col-lg-8 mb-4">
+                <!-- Embedded Google Map -->
+                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+            </div>
+            <!-- Contact Details Column -->
+            <div class="col-lg-4 mb-4">
+                <h3>Contact Details</h3>
+                <p>
+                    3481 Melrose Place
+                    <br>Beverly Hills, CA 90210
+                    <br>
+                </p>
+                <p>
+                    <abbr title="Phone">P</abbr>: (123) 456-7890
+                </p>
+                <p>
+                    <abbr title="Email">E</abbr>:
+                    <a href="mailto:name@example.com">name@example.com
+                    </a>
+                </p>
+                <p>
+                    <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
+                </p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Contact Form -->
+        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <h3>Send us a Message</h3>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Full Name:</label>
+                            <input type="text" class="form-control" id="name" required
+                                data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" required
+                                data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email Address:</label>
+                            <input type="email" class="form-control" id="email" required
+                                data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Message:</label>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required
+                                data-validation-required-message="Please enter your message" maxlength="999"
+                                style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </section>
 
     <!-- Footer -->
-    
-    <!-- Bundle de Bootstrap para desarrollo despues usar el .min -->
+    <footer class="py-5 bg-dark" id="footer">
+        <div class="container">
+            <p class="m-0 text-center text-white">Todos los derechos reservados &copy; Rolling Code - Grupo 1</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+
     <script src="js/bootstrap.bundle.js"></script>
-    <!-- Nuestra logica -->
     <script src="js/index.js"></script>
 </body>
+
 </html>
