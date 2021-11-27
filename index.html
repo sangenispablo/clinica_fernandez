@@ -13,24 +13,23 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- inicio Navbar Marcos -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
 
         <div class="container">
 
-            <a class="navbar-brand" href="index.html">Clinica Fernández</a>
-
+            <a class="navbar-clinicaF" href="index.html"><img src="img/clinica_logo_2.png" id="logo-clinica" alt="logo-clinica" class="d-inline-block"></a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarClinica">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="#">Servicios</a>
                     </li>
@@ -52,13 +51,19 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <li><a class="dropdown-item" href="#">Salir</a></li>
                         </ul>
                     </li>
                 </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                    <button class="btn btn-outline bg-primary" type="submit">BUSCAR</button>
+                </form>
             </div>
         </div>
     </nav>
+
+ <!-- Fin De navbar - Marcos-->   
 
 
     <!-- Seccion de Servicios -->
@@ -328,14 +333,40 @@
 
     </section>
 
-    <!-- Footer -->
+    <!-- Inicio Footer Marcos  -->
     <footer class="py-5 bg-dark" id="footer">
-        <div class="container">
-            <p class="m-0 text-center text-white">Todos los derechos reservados &copy; Rolling Code - Grupo 1</p>
+      <div class="container-footer p-2 mb-2 bg- text-dark">
+        <div class="row row-cols-1 row-cols-md-3 g-4"style="display: flex; justify-content: center; align-items: flex-start;">
+          <div class="logo-clinica" style="height: 200px; width: 200px;">
+            <div class="card border-0 d-flex align-items-center">
+              <img src="img/clinica_logo_2.png" class="card-img-top shadow-lg bg-body rounded" alt="logo">
+            </div>
+          </div>
+          <div class="redes-CF">
+            <div class="card border-0 p-1 mb-2 img-fluid">
+              <h4 class="card-title">Redes Sociales</h4>
+               <div class="icons d-flex justify-content-between m-3">
+                <div class="icon"><a href="https://es-la.facebook.com/login/device-based/regular/login/"><img
+                      src="img/logo-facebock.jpeg" class="card-img-top" alt="face-CF"
+                      style="width: 40px;height: 40px;"></a></div>
+                <div class="icon"><a href="https://www.instagram.com/?hl=es"><img src="img/logo-instagram.png" class="card-img-top" alt="instagram-CF" style="width: 40px;height: 40px;"></a></div>
+                <div class="icon"><a href="https://twitter.com/?lang=es"><img src="img/twitter-logo.jpeg" class="card-img-top" alt="twitter-CF" style="width: 40px;height: 40px;"></a></div>
+                <div class="icon"><a href="https://web.whatsapp.com/"><img src="img/wsp-logo.jpeg" class="card-img-top" alt="whatsapp-CF" style="width: 40px;height: 40px;"></a></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /.container -->
-    </footer>
-
+    </div>
+        <hr>
+        <div class="container">
+          <p class="m-0 text-center text-white">Todos los derechos reservados &copy; Rolling Code - Grupo 1</p>
+          <div class="information text-center">  
+          <a href="error404.html">Información Compañia</a> | <a href="error404.html">Privación y Política</a> | <a href="error404.html    ">Términos y Condiciones</a>
+         </div>  
+    </div>
+    
+    
+    <!--FIN DE FOOTER MARCOS-->
 
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/index.js"></script>
