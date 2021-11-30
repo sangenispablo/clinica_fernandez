@@ -9,3 +9,150 @@ body {
 .navbar{
   background-color: #00ADB5;
 }
+
+.footer-CF{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: rgb(45, 48, 51);
+  color: white;
+}
+
+.container-footer-all{
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 40px 0px 40px;
+  
+}
+
+.container-CF{
+  display: flex;
+  justify-content: space-between;
+}
+
+.colum-logo{
+  max-width: 400px;
+}
+
+.colum-logo h1{
+  font-size: 22px;
+}
+
+.colum-logo p{
+  font-size: 14px;
+  color: aliceblue;
+  margin-top: 20px;
+}
+
+.container.redes{
+  display: grid;
+  place-content: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.colum-redes{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  max-width: 400px;
+
+}
+.colum-redes h1{
+  font-size: 22px;
+}
+
+.colum-redes .row{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.colum-redes .row img{
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  padding: 0px;
+  border-radius: 100%;
+}
+
+.colum-redes .row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: aliceblue;
+}
+
+.colum-informacion{
+    max-width: 400px;
+}
+
+.colum-informacion h1{
+  font-size: 22px;
+}
+
+.row-info{
+  margin-top: 20px;
+  display: flex;
+}
+
+.row-info img{
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  object-fit: cover;
+  border-radius: 25%;
+  te
+
+}
+
+.row-info label{
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 150px;
+}
+
+.container-base{
+  width: 100%;
+  background: black;
+}
+
+.footer-base{
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.container-base .copyrigth {
+  color: white;
+}
+
+.container-base .information a{
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 1100px){
+  .container-CF{
+    flex-wrap: wrap;
+  }
+
+  .colum-logo{
+    max-width: 100%;
+  }
+  .colum-redes, .colum-informacion{
+    margin-top: 40px;
+  }
+  .container-base .information{
+    margin-left: 40px;
+  }
+}
+
+
+
+
