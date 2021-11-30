@@ -1,13 +1,36 @@
 body {
-  padding-top: 56px;
+  padding-top: 0px;
 }
+
+/* Barra de ARRIBA Marcos*/
+
+#topbar {
+  background: #3fbbc0;
+  color: #fff;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 996;
+  transition: all 0.5s;
+}
+
+/* Esta clase es para sacarlo cuando escrolemos */
+#topbar.topbar-scrolled {
+  top: -40px;
+}
+#topbar i {
+  padding-right: 6px;
+  line-height: 0;
+}
+
+/*INICIO CSS MARCOS*/
 
 #logo-clinica{
     max-width: 150px;
 }
 
 .navbar{
-  background-color: #00ADB5;
+  background-color: whitesmoke;
 }
 
 .footer-CF{
@@ -30,7 +53,7 @@ body {
 
 .container-CF{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .colum-logo{
@@ -42,42 +65,49 @@ body {
 }
 
 .colum-logo p{
-  font-size: 14px;
+  font-size: 15px;
   color: aliceblue;
   margin-top: 20px;
 }
 
-.container.redes{
-  display: grid;
-  place-content: center;
-  justify-content: center;
-  align-content: center;
+.colum-logo img{
+  width: 100%;
+  height: auto;
+  transform: scale(1.1);
 }
 
-.colum-redes{
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  max-width: 400px;
-
-}
 .colum-redes h1{
-  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.ms_logosRedes{
+flex-direction: column;
+display: flex;
+align-items: flex-end;
+
 }
 
 .colum-redes .row{
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
-
+  justify-content: space-around;
+  margin-left: 5px;
+  margin-right: 0px;
 }
 
 .colum-redes .row img{
+  background-color: white;
   width: 36px;
   height: 36px;
   object-fit: cover;
-  padding: 0px;
-  border-radius: 100%;
+  padding: 3px;
+  border-radius: 25%;
+}
+
+.ms_iconos:hover{
+  transform:scale(1.1);
 }
 
 .colum-redes .row label{
@@ -95,7 +125,7 @@ body {
 }
 
 .row-info{
-  margin-top: 20px;
+  margin-top: 22px;
   display: flex;
 }
 
@@ -110,7 +140,7 @@ body {
 }
 
 .row-info label{
-  margin-top: 10px;
+  margin-top: 0px;
   margin-left: 20px;
   max-width: 150px;
 }
@@ -124,8 +154,8 @@ body {
   max-width: 1300px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  padding: 40px;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .container-base .copyrigth {
