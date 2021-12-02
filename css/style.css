@@ -1,7 +1,19 @@
 body {
   padding-top: 0px;
 }
-
+/* Linea de Sections  */
+.linea--section{
+  color: #8c96a7;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 1%;
+}
+.celest{
+  color: #00adb5;
+}
+.gris{
+  color: #8c96a7;
+}
 /* Barra de ARRIBA Marcos*/
 
 #topbar {
@@ -32,6 +44,29 @@ body {
 .navbar{
   background-color: whitesmoke;
 }
+
+
+/* Martin Toro - Servicios */
+.servicios--cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cardServ{
+  width: 30%;
+  border: 1px solid red;
+  border-radius: 1rem;
+  padding: 1%;
+  margin-left: 3%;
+  margin-bottom: 1.5%;
+}
+.cardServ:hover{
+  background: #8c96a7;
+}
+.cardServ svg{
+  margin: auto;
+}
+/* Fin Servicios */
+
 
 .footer-CF{
   width: 100%;
