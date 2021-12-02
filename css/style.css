@@ -183,6 +183,43 @@ align-items: flex-end;
   }
 }
 
+/* STYLE ERROR 404 - OSCAR */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.os_body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(56,56,56);
+
+}
+
+.o_wrapper{
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+}
+.o_wrapper .o_message{
+  font-size: 1.5rem;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+.o_wrapper .o_btn {
+  background: rgb(0,195,154);
+  padding: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+.o_wrapper .o_btn:hover { background: rgb(0, 231, 201);}
+.o_wrapper .o_copyRights {margin-top: 50px;}
 
 
 
