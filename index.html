@@ -13,7 +13,7 @@
 
 <body>
 
-<!-- Marcos - barra de arriba-->
+    <!-- Marcos - barra de arriba-->
     <div id="topbar" class="d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
             <div class="align-items-center d-none d-md-flex">
@@ -28,13 +28,14 @@
 
 
     <!-- inicio Navbar Marcos -->
-    
+
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
 
         <div class="container">
 
-            <a class="navbar-clinicaF" href="index.html"><img src="img/logo-CF.png" id="logo-clinica" alt="logo-clinica" class="d-inline-block"></a>
-            
+            <a class="navbar-clinicaF" href="index.html"><img src="img/logo-CF.png" id="logo-clinica" alt="logo-clinica"
+                    class="d-inline-block"></a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -43,7 +44,7 @@
 
             <div class="collapse navbar-collapse" id="navbarClinica">
                 <ul class="navbar-nav ms-auto">
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="#mt-servicios">Servicios</a>
                     </li>
@@ -73,59 +74,105 @@
         </div>
     </nav>
 
- <!-- Fin De navbar - Marcos-->   
+    <!-- Fin De navbar - Marcos-->
 
-
-    <!-- Seccion de Servicios -->
-    <section class="container" id="servicios">
-
-        <!-- Page Heading/Breadcrumbs -->
-        
-
-        <!-- Image Header -->
-        <img class="img-fluid rounded mb-4" src="http://placehold.it/1200x300" alt="">
-
-        <!-- Marketing Icons Section -->
-        <div class="row">
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100">
-                    <h4 class="card-header">Card Title</h4>
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
-                            necessitatibus neque.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
+    <!-- Carrousel - Oscar -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/carousel/clinic-4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100">
-                    <h4 class="card-header">Card Title</h4>
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam
-                            eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque
-                            exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
+            <div class="carousel-item">
+                <img src="/img/carousel/clinic-5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100">
-                    <h4 class="card-header">Card Title</h4>
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
-                            necessitatibus neque.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
+            <div class="carousel-item">
+                <img src="/img/carousel/clinic-8.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
                 </div>
             </div>
         </div>
-        <!-- /.row -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+    <!-- Fin Carrousel -->
+
+    <!-- Page Heading/Breadcrumbs -->
+
+
+    <!-- Image Header -->
+    <img class="img-fluid rounded mb-4" src="http://placehold.it/1200x300" alt="">
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <h4 class="card-header">Card Title</h4>
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                        necessitatibus neque.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <h4 class="card-header">Card Title</h4>
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam
+                        eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque
+                        exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <h4 class="card-header">Card Title</h4>
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                        necessitatibus neque.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
 
     </section>
 
@@ -337,78 +384,83 @@
     <!-- Inicio Footer Marcos  -->
     <footer class="footer-CF">
 
-     <div class="container-footer-all">
-        <div class="container-CF">
-            <div class="colum-logo">
-                <h1>Clinica-Fernandez</h1>
-                <p>Somos un grupo de profesionales que cuidamos su Salud hasta su ultimo Aliento.</p>
-                 <a href="index.html"><img src="/img/logo-CF.png" logo="clinica_logo_3"></a>
-            </div>
+        <div class="container-footer-all">
+            <div class="container-CF">
+                <div class="colum-logo">
+                    <h1>Clinica-Fernandez</h1>
+                    <p>Somos un grupo de profesionales que cuidamos su Salud hasta su ultimo Aliento.</p>
+                    <a href="index.html"><img src="/img/logo-CF.png" logo="clinica_logo_3"></a>
+                </div>
 
-            <div class="container-redes">
-               <div class="colum-redes">
-                 <h1>Redes Sociales</h1>
-                   <div class="ms_logoRedes d-flex justify-content-between">
-                     <div class="row">
-                    <a href="https://es-la.facebook.com/login/device-based/regular/login/"><img class="ms_iconos" src="img/logo-facebook.svg" alt="logo-facebock"></a>
-                    
-                     </div>
+                <div class="container-redes">
+                    <div class="colum-redes">
+                        <h1>Redes Sociales</h1>
+                        <div class="ms_logoRedes d-flex justify-content-between">
+                            <div class="row">
+                                <a href="https://es-la.facebook.com/login/device-based/regular/login/"><img
+                                        class="ms_iconos" src="img/logo-facebook.svg" alt="logo-facebock"></a>
 
-                    <div class="row">
-                    <a href="https://www.instagram.com/?hl=es"><img class="ms_iconos" src="img/logo-instagram.svg" alt="logo-instagram"></a>
-                    
+                            </div>
+
+                            <div class="row">
+                                <a href="https://www.instagram.com/?hl=es"><img class="ms_iconos"
+                                        src="img/logo-instagram.svg" alt="logo-instagram"></a>
+
+                            </div>
+
+                            <div class="row">
+                                <a href="https://twitter.com/?lang=es"><img class="ms_iconos" src="img/logo-twitter.svg"
+                                        alt="logo-Twitter"></a>
+
+                            </div>
+
+                            <div class="row">
+                                <a href="https://web.whatsapp.com/"><img class="ms_iconos" src="img/logo-whatsapp.svg"
+                                        alt="logo-wsp"></a>
+
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="row">
-                    <a href="https://twitter.com/?lang=es"><img class="ms_iconos" src="img/logo-twitter.svg" alt="logo-Twitter"></a>
-                    
+                </div>
+
+                <div class="colum-informacion">
+                    <h1>Informacion Contactos</h1>
+                    <div class="row-info">
+                        <img src="img/home-outline.svg" alt="logo-direccion">
+                        <label for="">25 de Mayo 450 - Tucuman - Argentina</label>
                     </div>
 
-                   <div class="row">
-                   <a href="https://web.whatsapp.com/"><img class="ms_iconos" src="img/logo-whatsapp.svg" alt="logo-wsp"></a>
-                    
+                    <div class="row-info">
+                        <img src="img/call-outline.svg" alt="logo-telefono">
+                        <label class="mt-2">Tel.: 381-5509760</label>
+                    </div>
+
+                    <div class="row-info">
+                        <img src="img/mail-open-outline.svg" alt="logo-email">
+                        <label class="mt-2">clinicafernandez@gmail.com</label>
+                    </div>
+
                 </div>
-                </div>  
             </div>
-
-            </div>
-
-            <div class="colum-informacion">
-                <h1>Informacion Contactos</h1>
-                <div class="row-info">
-                    <img src="img/home-outline.svg" alt="logo-direccion">
-                    <label for="">25 de Mayo 450 - Tucuman - Argentina</label>
+            <hr>
+        </div>
+        <div class="container-base">
+            <div class="footer-base">
+                <div class="copyrigth">
+                    <p class="m-0 text-white">Todos los derechos reservados &copy; Rolling Code - Grupo 1</p>
                 </div>
 
-                <div class="row-info">
-                    <img src="img/call-outline.svg" alt="logo-telefono">
-                    <label class="mt-2">Tel.: 381-5509760</label>
+                <div class="information">
+                    <a href="error404.html">Información Compañia</a> | <a href="error404.html">Privación y Política</a>
+                    | <a href="error404.html    ">Términos y Condiciones</a>
                 </div>
-
-                <div class="row-info">
-                    <img src="img/mail-open-outline.svg" alt="logo-email">
-                    <label class="mt-2">clinicafernandez@gmail.com</label>
-                </div>              
-
             </div>
         </div>
-        <hr>        
-   </div>
-   <div class="container-base">
-       <div class="footer-base">
-            <div class="copyrigth">
-               <p class="m-0 text-white">Todos los derechos reservados &copy; Rolling Code - Grupo 1</p>
-            </div>
-
-            <div class="information">  
-               <a href="error404.html">Información Compañia</a> | <a href="error404.html">Privación y Política</a> | <a href="error404.html    ">Términos y Condiciones</a>
-            </div> 
-        </div>
-      </div>
 
     </footer>
-    
-    
+
+
     <!--FIN DE FOOTER MARCOS-->
 
     <script src="js/bootstrap.bundle.js"></script>
