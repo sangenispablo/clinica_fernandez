@@ -105,12 +105,13 @@ nav{
   width: 25%;
   height: 25%;
   border-radius: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(16, 189, 233);
+  -webkit-box-shadow: -24px -6px 5px 0px rgba(13,195,227,0.63);
+  -moz-box-shadow: -24px -6px 5px 0px rgba(13,195,227,0.63);
+  box-shadow: -24px -6px 5px 0px rgba(13,195,227,0.63);
 }
 
 .carousel-item img{
   border-radius: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .carousel-indicators button{
@@ -120,11 +121,6 @@ nav{
   height: 10px;
 }
 
-#foto_about img::after{
-  width: 100%;
-  height: auto;
-  opacity: 1;
-}
 
 
 /*Fin About Marcos*/
