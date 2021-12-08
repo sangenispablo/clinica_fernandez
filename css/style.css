@@ -101,15 +101,62 @@ nav{
 
 /*Inicio About Marcos*/
 
+.ms-about-section{
+  padding: 40px 40px 0px 40px;
+}
+
+#ms-about {
+  background-image: url("/img/carousel/clinic-3.jpg");
+  background-size: cover;
+}
+
+.ms-fotopablo{
+  width: 400px;
+  height: 400px;
+  object-fit: co;
+}
+
+.ms-fotosergio{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.ms-fotomarcos{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.ms-fotooscar{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.ms-fotomartin{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.ms-fotomatias{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
 .carousel-inner{
-  width: 25%;
-  height: 25%;
+  width: 400px;
+  height: 400px;
   border-radius: 100%;
+  margin-bottom: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(16, 189, 233);
 }
 
 .carousel-item img{
-  border-radius: 100%;
+  overflow: hidden;
+  object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -153,6 +200,8 @@ nav{
 }
 
 .colum-logo h1{
+  display: flex;
+  justify-content: center;
   font-size: 22px;
 }
 
