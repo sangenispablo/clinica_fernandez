@@ -120,13 +120,6 @@ nav{
   height: 10px;
 }
 
-#foto_about img::after{
-  width: 100%;
-  height: auto;
-  opacity: 1;
-}
-
-
 /*Fin About Marcos*/
 
 /* Fin Servicios */
