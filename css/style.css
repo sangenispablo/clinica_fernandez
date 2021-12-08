@@ -54,44 +54,49 @@ nav{
   color: #00adb5 !important;
 }
 
-/* Martin Toro - Servicios */
+/* Linea de vida - Martin Toro */
 .mlt--lineavida{
   margin-top: 2%;
   text-align: center;
 }
+/* Servicios - Martin Toro*/
+.servicios{
+  height: 35em;
+}
+.servicios--titulo{
+  width: 100%;
+}
 .servicios--titulo h2{
-  font-size: 40px;
-  font-family: 'SF UI Display Heavy';
+  padding-top: 2%;
+  font-size: 33px;
+  font-family: 'SF UI Display bold';
+  text-align: center;
   color: #205f92;
-  text-shadow: 4px 4px 16px rgba(150, 150, 150, 0.30);
+}
+.servicios--titulo p{
+  font-family: 'SF UI Display Light';
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 17px;
 }
 .servicios--cards{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 28% 28% 28% ;
+  justify-content: space-around;
+  height: 75%;
 }
 .cardServ{
-  width: 30%;
-  border-radius: 1rem;
-  padding: 1%;
-  margin-left: 3%;
-  margin-bottom: 1.5%;
-  background-color: #3fbbc0;
+  border-radius: 1em;
+  margin-bottom: 5%;
   display: flex;
   flex-direction: column;
-}
-.cardServ h3{
+  justify-content: center;
   text-align: center;
-}
-.cardServ--btn{
-  width: 35%;
-  background-color: #fff;
-  color: #00adb5;
-  border-style: none;
-  border-radius: 0.5rem;
-  margin: auto;
-
+  box-shadow: #205f92 0px 2px 8px 0px;
 }
 .cardServ:hover{
+<<<<<<< HEAD
   background: #00adb5;
   fill: #fff;
 }
@@ -158,20 +163,32 @@ nav{
   overflow: hidden;
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+=======
+  background-color: #205f92;
+  color: #fff;
+>>>>>>> 82f0e95094cc30de7362266cc9b04859fcf4bdab
 }
-
-.carousel-indicators button{
-  display: none;
-  border-radius: 100%;
-  width: 10px;
-  height: 10px;
+.cardServ p{
+  font-family: 'SF UI Display Medium';
+  font-weight: 500;
+  font-size: 18px;
+  color: #5fcbf3;
 }
+<<<<<<< HEAD
 
 /*Fin About Marcos*/
 
 /* Fin Servicios */
 
 
+=======
+.cardServ svg{
+  display: flex;
+  align-self: center;
+}
+.
+/* Footer */
+>>>>>>> 82f0e95094cc30de7362266cc9b04859fcf4bdab
 .footer-CF{
   width: 100%;
   margin: 0px;
@@ -276,7 +293,6 @@ align-items: flex-end;
   background-color: white;
   object-fit: cover;
   border-radius: 25%;
-  te
 
 }
 
