@@ -96,7 +96,6 @@ nav{
   box-shadow: #205f92 0px 2px 8px 0px;
 }
 .cardServ:hover{
-<<<<<<< HEAD
   background: #00adb5;
   fill: #fff;
 }
@@ -163,10 +162,6 @@ nav{
   overflow: hidden;
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-=======
-  background-color: #205f92;
-  color: #fff;
->>>>>>> 82f0e95094cc30de7362266cc9b04859fcf4bdab
 }
 .cardServ p{
   font-family: 'SF UI Display Medium';
@@ -174,21 +169,12 @@ nav{
   font-size: 18px;
   color: #5fcbf3;
 }
-<<<<<<< HEAD
 
 /*Fin About Marcos*/
 
 /* Fin Servicios */
 
 
-=======
-.cardServ svg{
-  display: flex;
-  align-self: center;
-}
-.
-/* Footer */
->>>>>>> 82f0e95094cc30de7362266cc9b04859fcf4bdab
 .footer-CF{
   width: 100%;
   margin: 0px;
