@@ -175,6 +175,7 @@ nav{
   font-size: 18px;
   color: #000;
 }
+<<<<<<< HEAD
 .cardServ svg{
   display: flex;
   align-self: center;
@@ -268,6 +269,14 @@ nav{
 }
 
 /* Footer */
+=======
+
+/*Fin About Marcos*/
+
+/* Fin Servicios */
+
+
+>>>>>>> f13c61fafcf7e10279218f472fc76b0d2547dfc7
 .footer-CF{
   width: 100%;
   margin: 0px;
