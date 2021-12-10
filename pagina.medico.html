@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina detalle de medico</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/sergio.css">
+
+</head>
+<body class="pagina-ss" >
+  
+  <nav class="navbar">
+    <div class="content">
+      <a  >Clinica Fernandez Horarios</a>
+    </div>
+  </nav>
+   <div class="container-xl" >
+     <div class="row">
+       <div class="col">
+      <br>
+        <h2>Neurologa Dra. Fabiana Fernandez</h1>
+          
+        <img src="/clinica_fernandez/img/medica.fab.jpg" class="img-fluid" alt="...">
+        
+      </div>
+        <div class="col" class="columna-2">
+        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Atque consectetur dolore eveniet dolores itaque, velit</h4>
+          <br>
+          
+        <div onclick="genera_tabla()">
+      <button class="btn" > Turnos disponibles  </button>
+      </div>
+      <br>
+       <br>
+       <h5> Cancelar el turno con 24 hs de antelacion </h5>
+        
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span></a>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span> </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+      </div>
+      
+        
+<div class="modal" tabindex="-1" id="modal1" class="open-modal" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Consulta</h5>
+      </div>
+      <div class="modal-body">
+        <input placeholder="Indique el motivo de su consulta">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-close>Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<table data-open="modal1" id="table1" hidden>
+  <thead>   
+  </thead>
+  <tbody id="body" > 
+  </tbody>
+</table>
+
+<div id="container" >
+</div>
+
+
+      
+<script src="/clinica_fernandez/js/sergio.js"></script>
+</body>
+</html>
+
