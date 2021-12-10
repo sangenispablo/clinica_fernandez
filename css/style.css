@@ -175,7 +175,6 @@ nav{
   font-size: 18px;
   color: #000;
 }
-<<<<<<< HEAD
 .cardServ svg{
   display: flex;
   align-self: center;
@@ -258,10 +257,16 @@ nav{
 .container--contacto{
   display: flex;
 }
+.contacto--titulo h1{
+  font-family: 'SF UI Display Light';
+}
+.contacto--izq{
+  margin-left: 1%;
+}
 .contacto--der{
-  width: 50%;
+  width: 49vw;
   background-color: #00adb5;
-  margin-left: 2%;
+  margin-left: 1%;
 }
 .contacto--der form{
   display: flex;
@@ -269,14 +274,6 @@ nav{
 }
 
 /* Footer */
-=======
-
-/*Fin About Marcos*/
-
-/* Fin Servicios */
-
-
->>>>>>> f13c61fafcf7e10279218f472fc76b0d2547dfc7
 .footer-CF{
   width: 100%;
   margin: 0px;
