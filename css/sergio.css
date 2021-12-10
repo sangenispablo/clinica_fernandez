@@ -1,0 +1,96 @@
+
+.pagina-ss{
+  font: 'san serif';
+  background-color: lightblue;
+}
+
+.container-xl{
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top:20%;
+  right: 50px;
+  left:50px;
+  z-index: -1;
+}
+.col{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.navbar{
+  background: lightseagreen;
+  color: white;
+  font-size: 1.5rem;
+  padding-top: 3%;
+ 
+}
+.content{
+  position: absolute;
+  left:9%;
+  top:2%;
+}
+
+.pagination{
+  background: lightblue;
+  position: absolute;
+  top:90%;
+  left: 50%;
+  
+}
+  .btn:hover{
+  background:lightblue;
+
+}
+td:hover{
+    background: #fff;
+}
+ .modal { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+  }
+
+  .modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+  }
+   
+  .modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+ .pagination{
+  position: fixed;
+   left:50%;
+ }
+
+ table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  position: absolute;
+  left: 30%;
+  top:30%;
+  background-color:lightgray;
+}
+th, td{
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+.card{
+  background: lightblue;
+  color: #fff;
+  width: 400px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/sergio.css">
+    <title>pagina de contacto</title>
+</head>
+<body class="pagina-ss">
+ <nav class="navbar">
+  <div class="content">
+      <a >Clinica Fernandez Horarios Lunes a Viernes de</a>
+      </div>
+  </nav>
+  <div class="container-xl">
+    <h2>Complete sus datos</h2>
+
+    <form name="fvalida">
+      <table>
+      <tr>
+           <td>Nombre y Apellido </td>
+           <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+      </tr>
+      <tr>
+           <td>Edad: </td>
+           <td><input type="number" name="edad" size="3" maxlength="2"></td>
+      </tr>
+      <tr>
+           <td>Motivo de consulta</td>
+           <td>
+           <select name=interes>
+           <option value="Elegir">Elegir
+           <option value="Pagos">Tesoreria
+           <option value="Administracion">Administracion
+           <option value="Proveedores">Disponibilidad de Estudios
+           </select>
+           </td>
+      </tr>
+      <tr>
+           <td colspan="2" align="center"><button class="btn" onclick="valida_envia()"> Enviar </button></td>
+      </tr>
+      </table>
+      </form>
+
+      
+
+  </div>
+  
+
+<script src="js/sergio.js" ></script>
+    
+</body>
+</html>
