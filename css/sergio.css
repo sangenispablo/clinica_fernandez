@@ -93,8 +93,8 @@
   width: 40vw;
 }
 
-th, td{
-  padding: 10px 20px;
+th:hover, td:hover{
+  padding: 10px 10px;
   border: 5px double #3FBBC0;
 }
 tr{

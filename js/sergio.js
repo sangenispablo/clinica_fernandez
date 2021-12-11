@@ -52,16 +52,6 @@ for (const el of closeEls) {
 }
 
 
-function genera_tabla() {
-	// Obtener la referencia del elemento body
-	let table = document.getElementsById(body);
-  
-}
-  
-
-
-
-
 let table = document.createElement('table');
 let thead = document.createElement('thead');
 let tbody = document.createElement('tbody');
@@ -91,6 +81,7 @@ row_1.appendChild(heading_3);
 row_1.appendChild(heading_4);
 row_1.appendChild(heading_5);
 thead.appendChild(row_1);
+
 
 
 // Creating and adding data to second row of the table
@@ -193,7 +184,7 @@ tbody.appendChild(row_6);
 
 
 {
-let container = document.getElementById("container");
+let container = document.getElementById("container-2");
 
 	let row_1 = document.createElement("tr");
   row_1.className ="card";
