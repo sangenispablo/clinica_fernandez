@@ -1,36 +1,10 @@
+//pagina contacto
 
-//pagina medico modal
-
-const openEls = document.querySelectorAll("[data-open]");
-const isVisible = "is-visible";
-const closeEls = document.querySelectorAll("[data-close]");
-
-for(const el of openEls) {
-  el.addEventListener("click", function() {
-    const modalId = this.dataset.open;
-    document.getElementById(modalId).classList.add(isVisible);
-  });
-}
-
-for (const el of closeEls) {
-	el.addEventListener("click", function() {
-		document.querySelector(".modal.is-visible").classList.remove(isVisible);
-	});
-}
-
-
-
-
-
-
-//formulario
-
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
 	document.getElementById("formulario").addEventListener('submit', validarFormulario); 
-  });
+  });*/
 
 function valida_envia(){
-	
 	//valido el nombre
 	if (document.fvalida.nombre.value.length==0){
 		   alert("Tiene que escribir su Nombre y Apellido")
@@ -58,15 +32,24 @@ function valida_envia(){
 }
 
 
+//pagina medico modal
 
-function genera_tabla() {
-	// Obtener la referencia del elemento body
-	var table = document.getElementsById(body);
-  
+const openEls = document.querySelectorAll("[data-open]");
+const isVisible = "is-visible";
+const closeEls = document.querySelectorAll("[data-close]");
+
+for(const el of openEls) {
+  el.addEventListener("click", function() {
+    const modalId = this.dataset.open;
+    document.getElementById(modalId).classList.add(isVisible);
+  });
 }
-  
 
-
+for (const el of closeEls) {
+	el.addEventListener("click", function() {
+		document.querySelector(".modal.is-visible").classList.remove(isVisible);
+	});
+}
 
 
 let table = document.createElement('table');
@@ -98,6 +81,7 @@ row_1.appendChild(heading_3);
 row_1.appendChild(heading_4);
 row_1.appendChild(heading_5);
 thead.appendChild(row_1);
+
 
 
 // Creating and adding data to second row of the table
@@ -200,7 +184,7 @@ tbody.appendChild(row_6);
 
 
 {
-let container = document.getElementById("container");
+let container = document.getElementById("container-2");
 
 	let row_1 = document.createElement("tr");
   row_1.className ="card";
