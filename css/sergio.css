@@ -1,17 +1,30 @@
 
 .pagina-ss{
   font: 'san serif';
-  background-color: lightblue;
+  background-color: white;
 }
 
+.container-xl-2{
+  background-color: #3FBBC0;
+  border-radius: 5px;
+  position: absolute;
+  top:20%;
+  left:30vw;
+  z-index: -1;
+  color:white;
+  text-align: center;
+  width: 40vw;
+}
 .container-xl{
-  background-color: white;
+  background-color: #3FBBC0;
   border-radius: 5px;
   position: absolute;
   top:20%;
   right: 50px;
   left:50px;
   z-index: -1;
+  color:white;
+  text-align: center;
 }
 .col{
   margin: auto;
@@ -20,13 +33,7 @@
   justify-content: space-between;
 }
 
-.navbar{
-  background: lightseagreen;
-  color: white;
-  font-size: 1.5rem;
-  padding-top: 3%;
- 
-}
+
 .content{
   position: absolute;
   left:9%;
@@ -41,12 +48,12 @@
   
 }
   .btn:hover{
-  background:lightblue;
+  background:#3FBBC0;
+}
+.btn{
+  background-color: white;
+}
 
-}
-td:hover{
-    background: #fff;
-}
  .modal { 
     position: fixed;
     top: 0;
@@ -78,19 +85,25 @@ td:hover{
  }
 
  table{
-  border-collapse: collapse;
-  border-spacing: 0;
-  position: absolute;
-  left: 30%;
-  top:30%;
-  background-color:lightgray;
+  background-color:white;
+  border: 5px double #3FBBC0;
+  color:black;
+  border-radius: 20px;
+  width: 40vw;
 }
+
 th, td{
   padding: 10px 20px;
-  border: 1px solid #000;
+  border: 5px double #3FBBC0;
+}
+tr{
+  border: 5px double #3FBBC0;
 }
 .card{
   background: lightblue;
   color: #fff;
   width: 400px;
+}
+select{
+  border: 1px double #3FBBC0;
 }
