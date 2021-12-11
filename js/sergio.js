@@ -52,6 +52,11 @@ for (const el of closeEls) {
 }
 
 
+
+
+
+
+
 let table = document.createElement('table');
 let thead = document.createElement('thead');
 let tbody = document.createElement('tbody');
@@ -60,7 +65,7 @@ table.appendChild(thead);
 table.appendChild(tbody);
 
 // Adding the entire table to the body tag
-document.getElementById('body').appendChild(table);
+document.getElementById('turnos').appendChild(table);
 
 // Creating and adding data to first row of the table
 let row_1 = document.createElement('tr');
@@ -182,9 +187,7 @@ row_6.appendChild(row_6_data_5);
 tbody.appendChild(row_6);
 
 
-
-{
-let container = document.getElementById("container-2");
+/* let container = document.getElementById("container-2");
 
 	let row_1 = document.createElement("tr");
   row_1.className ="card";
@@ -223,5 +226,5 @@ let container = document.getElementById("container-2");
   container.appendChild(row_6);
 
   
-}
+}*/
 

@@ -1,4 +1,4 @@
-
+/*-------------------- css pagina sergio-----------------*/
 .pagina-ss{
   font: 'san serif';
   background-color: white;
@@ -49,43 +49,11 @@
   
 }
   .btn:hover{
-  background:#3FBBC0;
-}
-.btn{
-  background-color: white;
+  background:white;
+
 }
 
- .modal { 
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    cursor: pointer;
-    opacity: 0;
-    transition: all 0.35s ease-in;
-  }
-
-  .modal {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.35s ease-in;
-  }
-   
-  .modal.is-visible {
-    visibility: visible;
-    opacity: 1;
-  }
- .pagination{
-  position: fixed;
-   left:50%;
- }
-
- table{
+table{
   background-color:white;
   border: 5px double #3FBBC0;
   color:black;
@@ -108,3 +76,43 @@ tr{
 select{
   border: 1px double #3FBBC0;
 }
+.pagination{
+  position: fixed;
+   left:50%;
+ }
+/* -------- modal--------------*/
+
+
+.modal-header{
+  width: 40vw;
+}
+
+.open-modal {
+  font-weight: bold;
+  background: var(--blue);
+  color: var(--white);
+  padding: .75rem 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.modal{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+  
+  
+}
+ 
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*----- tabla de turnos -----*/ 
+
