@@ -1,11 +1,10 @@
-//formulario
+//pagina contacto
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
 	document.getElementById("formulario").addEventListener('submit', validarFormulario); 
-  });
+  });*/
 
 function valida_envia(){
-	
 	//valido el nombre
 	if (document.fvalida.nombre.value.length==0){
 		   alert("Tiene que escribir su Nombre y Apellido")
@@ -32,6 +31,7 @@ function valida_envia(){
 	document.fvalida.submit();
 }
 
+
 //pagina medico modal
 
 const openEls = document.querySelectorAll("[data-open]");
@@ -54,7 +54,7 @@ for (const el of closeEls) {
 
 function genera_tabla() {
 	// Obtener la referencia del elemento body
-	var table = document.getElementsById(body);
+	let table = document.getElementsById(body);
   
 }
   
