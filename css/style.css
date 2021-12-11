@@ -254,23 +254,54 @@ nav{
 }
 
 /* Contacto - Martin Toro */
+.contacto{
+  margin-bottom: 3vw;
+}
 .container--contacto{
   display: flex;
+  justify-content: space-around;
+}
+.contacto--titulo{
+  width: 100vw;
 }
 .contacto--titulo h1{
-  font-family: 'SF UI Display Light';
+  font-family: 'SF UI Display Bold';
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 1%;
 }
 .contacto--izq{
-  margin-left: 1%;
+  width: 40vw;
+}
+.contacto--izq ul{
+  list-style: none;
+}
+.contacto--izq a{
+  text-decoration: none;
+  font-family: 'SF UI Display Light';
+  font-weight: 900;
+  color: #000;
+  font-size: 14px;
+}
+.contacto--izq i{
+  font-size: 30px;
 }
 .contacto--der{
-  width: 49vw;
-  background-color: #00adb5;
-  margin-left: 1%;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
 }
 .contacto--der form{
   display: flex;
   flex-direction: column;
+  width: 35vw;
+}
+.contacto--der form input{
+  font-family: 'SF UI Display Medium';
+  font-weight: 300;
+  padding-left: 1.2%;
 }
 
 /* Footer */
