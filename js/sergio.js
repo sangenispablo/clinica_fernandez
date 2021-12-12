@@ -195,49 +195,43 @@ row_6.appendChild(row_6_data_2);
 row_6.appendChild(row_6_data_3);
 row_6.appendChild(row_6_data_4);
 row_6.appendChild(row_6_data_5);
-tbody.appendChild(row_6);
+tbody.appendChild(row_6);  */
 
 
 { let container = document.getElementById("container-2");
 
 	let row_1 = document.createElement("tr");
   row_1.className ="card";
-  row_1.id = "card" ;
   row_1.innerHTML = "Neurologa Dra Fernandez Fabiana";
   container.appendChild(row_1);
 
   let row_2 = document.createElement("tr");
   row_2.className ="card";
-  row_2.id = "card" ;
   row_2.innerHTML = "Neurologa Dra Liliana Lopez";
   container.appendChild(row_2);
 
   let row_3 = document.createElement("tr");
   row_3.className ="card";
-  row_3.id = "card" ;
   row_3.innerHTML = "Neurologa Dr Gonzales Gabriel";
   container.appendChild(row_3);
 
   let row_4 = document.createElement("tr");
   row_4.className ="card";
-  row_4.id = "card" ;
   row_4.innerHTML = "Neurologa Dr Rodriguez Roberto ";
   container.appendChild(row_4);
 
   let row_5 = document.createElement("tr");
   row_5.className ="card";
-  row_5.id = "card" ;
   row_5.innerHTML = "Neurologa Dra Arias Analia";
   container.appendChild(row_5);
 
   let row_6 = document.createElement("tr");
   row_6.className ="card";
-  row_6.id = "card" ;
   row_6.innerHTML = "Neurologa Dr Martinez Mariano";
   container.appendChild(row_6);
 
   
 }
-*/
+
 
 

@@ -265,8 +265,8 @@ nav{
 }
 .contacto--der{
   width: 49vw;
-  background-color: #00adb5;
   margin-left: 1%;
+  color: #00adb5;
 }
 .contacto--der form{
   display: flex;
