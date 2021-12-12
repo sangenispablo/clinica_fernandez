@@ -11,6 +11,11 @@ function valida_envia(){
 		   document.fvalida.nombre.focus()
 		   return 0;
 	}
+  if (document.fvalida.email.value.length==0){
+    alert("Ingrese un email valido")
+    document.fvalida.email.focus()
+    return 0;
+  }
  
 	//valido la edad. tiene que ser entero mayor que 18
 	if (document.fvalida.edad.value<18){
@@ -25,6 +30,12 @@ function valida_envia(){
 		   document.fvalida.interes.focus()
 		   return 0;
 	}
+  if (document.fvalida.texto.value.length==0){
+    alert("Detalle por favor el motivo de su consulta")
+    document.fvalida.texto.focus()
+    return 0;
+}
+
  
 	//el formulario se envia
 	alert("Muchas gracias por enviar el formulario");
@@ -57,7 +68,7 @@ for (const el of closeEls) {
 
 
 
-let table = document.createElement('table');
+ /*let table = document.createElement('table');
 let thead = document.createElement('thead');
 let tbody = document.createElement('tbody');
 
@@ -187,7 +198,7 @@ row_6.appendChild(row_6_data_5);
 tbody.appendChild(row_6);
 
 
-/* let container = document.getElementById("container-2");
+{ let container = document.getElementById("container-2");
 
 	let row_1 = document.createElement("tr");
   row_1.className ="card";
@@ -226,5 +237,7 @@ tbody.appendChild(row_6);
   container.appendChild(row_6);
 
   
-}*/
+}
+*/
+
 

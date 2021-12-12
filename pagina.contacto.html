@@ -31,8 +31,12 @@
       <table>
       <tr>
            <td>Nombre y Apellido </td>
-           <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+           <td><input type="text" name="nombre" size="30" maxlength="40" ></td>
       </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" name="email" size="30" maxlength="30"></td>
+   </tr>
       <tr>
            <td>Edad: </td>
            <td><input type="number" name="edad" size="3" maxlength="2"></td>
@@ -48,6 +52,10 @@
            </select>
            </td>
       </tr>
+      <tr >
+        <td>Mensaje</td>
+        <td><input type="text" name="texto" size="30" maxlength="150" id="mensaje"></td>
+   </tr>
       <tr>
            <td colspan="2" align="center"><button class="btn" onclick="valida_envia()"> Enviar </button></td>
       </tr>

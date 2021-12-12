@@ -52,7 +52,10 @@
   background:white;
 
 }
+#mensaje{
+  height: 60px;
 
+}
 table{
   background-color:white;
   border: 5px double #3FBBC0;
