@@ -35,7 +35,7 @@ export const logged = () => {
 export const register = async (user) => {
   try {
     const user_exist = await getUserByEmail(user.email);
-    if (user_exist.length === 0) {
+    if (!user_exist) {
       const user_new = await postUser(user);
       return user_new;
     } else {
