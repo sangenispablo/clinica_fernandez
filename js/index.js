@@ -6,6 +6,12 @@ const user_logged = logged();
 if (user_logged) {
   // poner o sacar la clase hide_nav-item
   document.querySelector("#dropdown_user").classList.remove("hide_nav-item");
+  document.querySelector("#card_Cardiologia").classList.remove("hide_cardService");
+  document.querySelector("#card_Neurologia").classList.remove("hide_cardService");
+  document.querySelector("#card_Ortopedia").classList.remove("hide_cardService");
+  document.querySelector("#card_Ginecologia").classList.remove("hide_cardService");
+  document.querySelector("#card_Cirugia").classList.remove("hide_cardService");
+  document.querySelector("#card_Gastroenterologia").classList.remove("hide_cardService");
   document.querySelector("#btn_login").classList.add("hide_nav-item");
   document.querySelector("#btn_register").classList.add("hide_nav-item");
   document.querySelector("#dropdown09").innerHTML = user_logged.username;
@@ -14,6 +20,12 @@ if (user_logged) {
   btn_logout.addEventListener("click", logout);
 } else {
   document.querySelector("#dropdown_user").classList.add("hide_nav-item");
+  document.querySelector("#card_Cardiologia").classList.add("hide_cardService");
+  document.querySelector("#card_Neurologia").classList.add("hide_cardService");
+  document.querySelector("#card_Ortopedia").classList.add("hide_cardService");
+  document.querySelector("#card_Ginecologia").classList.add("hide_cardService");
+  document.querySelector("#card_Cirugia").classList.add("hide_cardService");
+  document.querySelector("#card_Gastroenterologia").classList.add("hide_cardService");
   document.querySelector("#btn_login").classList.remove("hide_nav-item");
   document.querySelector("#btn_logout").classList.remove("hide_nav-item");
 }

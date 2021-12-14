@@ -50,26 +50,26 @@ export const postUser = async (user) => {
   }
 };
 
-<<<<<<< HEAD
-export const getServices = async () => {
-  try {
-    const resource = jsUrl + "services";
-=======
+
+
 export const getDoctors = async () => {
   try {
     const resource = jsUrl + "doctors";
->>>>>>> cba634bbdedeacec54a26d72c3b02e855897a796
     const resp = await fetch(resource);
     const data = await resp.json();
     return data;
   } catch (error) {
     throw error;
   }
-<<<<<<< HEAD
-  try{
-    const user_logged = logged();
+};
+
+  export const getServices = async () => {
+    try {
+      const resource = jsUrl + "services";
+  const resp = await fetch(resource);
+  const data = await resp.json();
+  return data;
+} catch (error) {
+throw error;
   }
 };
-=======
-};
->>>>>>> cba634bbdedeacec54a26d72c3b02e855897a796
