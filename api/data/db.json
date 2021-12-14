@@ -11,6 +11,38 @@
       "email": "pablo@gmail.com",
       "password": "1234",
       "id": 2
+    },
+    {
+      "username": "sergio",
+      "email": "sergio@gmail.com",
+      "password": "123456",
+      "id": 3
+    }
+  ],
+  "services": [
+    {
+      "Especialidad": "Cardiología",
+      "id": 1
+    },
+    {
+      "Especialidad": "Neurología",
+      "id": 2
+    },
+    {
+      "Especialidad": "Ortopedia",
+      "id": 3
+    },
+    {
+      "Especialidad": "Ginecología",
+      "id": 4
+    },
+    {
+      "Especialidad": "Cirugía Dental",
+      "id": 5
+    },
+    {
+      "Especialidad": "Gastroenterología",
+      "id": 6
     }
   ]
 }

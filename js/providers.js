@@ -49,3 +49,17 @@ export const postUser = async (user) => {
     throw error;
   }
 };
+
+export const getServices = async () => {
+  try {
+    const resource = jsUrl + "services";
+    const resp = await fetch(resource);
+    const data = await resp.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+  try{
+    const user_logged = logged();
+  }
+};

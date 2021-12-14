@@ -1,4 +1,4 @@
-import { logged, logout } from "./users.js";
+import { logged, logout, } from "./users.js";
 // arriba importamos las funciones que necesitamos de users.js que a su vez esta usando providers.js
 
 const user_logged = logged();
@@ -29,3 +29,14 @@ if (preloader) {
     preloader.remove();
   });
 }
+
+export const getServices = async () => {
+  try {
+    const resource = jsUrl + "services";
+    const resp = await fetch(resource);
+    const data = await resp.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};
