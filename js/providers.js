@@ -49,3 +49,14 @@ export const postUser = async (user) => {
     throw error;
   }
 };
+
+export const getEspecialidades = async () => {
+  try {
+    const resource = jsUrl + "especialidades/";
+    const resp = await fetch(resource);
+    const data = await resp.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};
