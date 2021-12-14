@@ -30,21 +30,10 @@ border: 1px solid white;
 }
   
 /*------ css pagina medico especialidad sergio --------*/
-.container-fluid-2{
-  background-color: #3FBBC0;
-  border-radius: 5px;
-  position: absolute;
-  top:20%;
-  right: 50px;
-  left:50px;
-  z-index: -1;
-  color:white;
-  text-align: center;
-  align-items: center;
-}
 
 .button{
-  background: white;
+  background:#3FBBC0 ;
+  color: white;
 }
 .content{
   position: absolute;

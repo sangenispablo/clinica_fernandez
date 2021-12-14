@@ -48,4 +48,32 @@ export const postUser = async (user) => {
   } catch (error) {
     throw error;
   }
+<<<<<<< HEAD
 };
+=======
+};
+
+<<<<<<< HEAD
+export const getServices = async () => {
+  try {
+    const resource = jsUrl + "services";
+=======
+export const getDoctors = async () => {
+  try {
+    const resource = jsUrl + "doctors";
+>>>>>>> cba634bbdedeacec54a26d72c3b02e855897a796
+    const resp = await fetch(resource);
+    const data = await resp.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+<<<<<<< HEAD
+  try{
+    const user_logged = logged();
+  }
+};
+=======
+};
+>>>>>>> cba634bbdedeacec54a26d72c3b02e855897a796
+>>>>>>> 053a373feb37a2712788546b0eae1e6f44a5ed9c
