@@ -89,5 +89,8 @@ select{
   opacity: 1;
 }
 
-/*----- tabla de turnos -----*/ 
+.hide_cardService {
+  display: none;
+}
+
 

@@ -60,3 +60,14 @@ export const getDoctors = async () => {
     throw error;
   }
 };
+
+export const getServices = async () => {
+  try {
+    const resource = jsUrl + "services";
+    const resp = await fetch(resource);
+    const data = await resp.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};
