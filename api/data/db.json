@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "users": [
         {
             "username": "admin",
@@ -225,4 +226,20 @@
     "image": "../img/img-doctores/28m.jpeg"
   } 
 ]
+=======
+  "users": [
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "username": "pablo",
+      "email": "pablo@gmail.com",
+      "password": "1234",
+      "id": 2
+    }
+  ]
+>>>>>>> 322d6e8d1e6a395b55f432fe8c4cf8826232d6c6
 }
