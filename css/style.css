@@ -166,7 +166,7 @@ nav {
 .ms-fotopablo {
   width: 400px;
   height: 400px;
-  object-fit: co;
+  object-fit: cover;
 }
 
 .ms-fotosergio {
@@ -248,12 +248,14 @@ nav {
   justify-content: space-around;
 }
 .card {
-  width: 14em;
+  width: 400px;
+  height: 400px;
   margin-bottom: 3%;
   border-style: none !important;
 }
 .card-img-top {
   height: 15em;
+  object-fit: cover;
 }
 .card-body {
   height: 4rem !important;
@@ -464,6 +466,33 @@ nav {
   .container-base .information {
     margin-left: 40px;
   }
+  .container--equipo{
+    display: block;
+    max-width: 100%;
+  }
+  .ms-about-section{
+    max-width: 100%;
+  }
+
+  .card{
+    width: 100%;
+  }
+  .card img{
+    width: 100%;
+  }
+
+  .mlt--lineavida img{
+  max-width: 100%;
+}
+.container--contacto{
+  width: 100%;
+  display: block;
+}
+
+/*Card Doctor - Marcos*/
+
+#container-Doctor{
+  background:brown;
 }
 
 /* STYLE ERROR 404 - OSCAR */
