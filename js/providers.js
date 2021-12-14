@@ -50,9 +50,9 @@ export const postUser = async (user) => {
   }
 };
 
-export const getEspecialidades = async () => {
+export const getDoctors = async () => {
   try {
-    const resource = jsUrl + "especialidades/";
+    const resource = jsUrl + "doctors";
     const resp = await fetch(resource);
     const data = await resp.json();
     return data;
