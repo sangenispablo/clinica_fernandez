@@ -135,6 +135,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
   box-shadow: #205f92 0px 2px 8px 0px;
 }
 
