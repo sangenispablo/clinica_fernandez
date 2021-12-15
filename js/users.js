@@ -36,12 +36,37 @@ export const register = async (user) => {
   try {
     const user_exist = await getUserByEmail(user.email);
     if (!user_exist) {
-      const user_new = await postUser(user);
-      return user_new;
+      // antes de guardar el usuario chequear que todo este bien
+      // {
+      //  "username": "admin",
+      //  "email": "admin@gmail.com",
+      //  "password": "1234",
+      //  "id": 1
+      // }
+      if (user.username != "") {
+        if (user.password != "") {
+          // luego de verificar si el username no es vacio junto a la clave
+          // chequeo el email con un regEx
+          console.log(validarEmail(user.email));
+          if (validarEmail(user.email)) {
+            const user_new = await postUser(user);
+            return user_new;
+          }
+        }
+      }
+      throw "Error en los datos del usuario !!!";
     } else {
       return undefined;
     }
   } catch (error) {
     throw error;
+  }
+};
+
+const validarEmail = (valor) => {
+  if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/.test(valor)) {
+    return true;
+  } else {
+    return false;
   }
 };
