@@ -1,110 +1,96 @@
+/*-------------------- css pagina contacto sergio-----------------*/
 
-.pagina-ss{
-  font: 'san serif';
-  background-color: white;
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  text-align:center;
+  flex: 1;
+  padding: 10% 10%;
+  font-family: 'SF UI Display Medium'
+  
 }
-
-.container-xl-2{
-  background-color: #3FBBC0;
-  border-radius: 5px;
-  position: absolute;
-  top:20%;
-  left:30vw;
-  z-index: -1;
-  color:white;
-  text-align: center;
+h2{
+  color: #3FBBC0;
+}
+table{
+  
+  padding: 5px 5px;
   width: 40vw;
+  height: 50vh;
+  border-radius: 15px 20px;
+  background-image: url(/img/fondo-extra.jpg);
+  color: white;
 }
-.container-xl{
-  background-color: #3FBBC0;
-  border-radius: 5px;
-  position: absolute;
-  top:20%;
-  right: 50px;
-  left:50px;
-  z-index: -1;
-  color:white;
-  text-align: center;
+input{
+border-radius: 2px 5px;
+border: 1px solid white;
 }
-.col{
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  justify-content: space-between;
+.btn:hover{
+  background: white;
 }
+  
+/*------ css pagina medico especialidad sergio --------*/
 
-
-
+.button{
+  background:#3FBBC0 ;
+  color: white;
+}
 .content{
   position: absolute;
   left:9%;
   top:2%;
 }
-
 .pagination{
   background: lightblue;
   position: absolute;
   top:90%;
   left: 50%;
-  
-}
-  .btn:hover{
-  background:#3FBBC0;
-}
-.btn{
-  background-color: white;
-}
-
- .modal { 
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    cursor: pointer;
-    opacity: 0;
-    transition: all 0.35s ease-in;
-  }
-
-  .modal {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.35s ease-in;
-  }
-   
-  .modal.is-visible {
-    visibility: visible;
-    opacity: 1;
-  }
- .pagination{
-  position: fixed;
-   left:50%;
- }
-
- table{
-  background-color:white;
-  border: 5px double #3FBBC0;
-  color:black;
-  border-radius: 20px;
-  width: 40vw;
-}
-
-th:hover, td:hover{
-  padding: 10px 10px;
-  border: 5px double #3FBBC0;
-}
-tr{
-  border: 5px double #3FBBC0;
 }
 .card{
-  background: lightblue;
+  background:#3FBBC0;
   color: #fff;
-  width: 400px;
+  font-style: italic;
+  padding:10px
+
 }
 select{
   border: 1px double #3FBBC0;
 }
+.pagination{
+  position: fixed;
+   left:50%;
+ }
+
+/* -------- modal--------------*/
+
+.modal-header{
+  width: 40vw;
+}
+.open-modal {
+  font-weight: bold;
+  background: var(--blue);
+  color: var(--white);
+  padding: .75rem 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+.modal{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hide_cardService {
+  display: none;
+}
+
+

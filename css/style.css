@@ -4,8 +4,51 @@ html{
 body {
   padding-top: 0px;
 }
-.celest{
+
+.celest {
   color: #00adb5;
+}
+
+/* Pablo Sangenis para el manejo del menu */
+.hide_nav-item {
+  display: none;
+}
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #1977cc;
+  border-top-color: #d1e6f9;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;  
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* TopBar - Marcos*/
@@ -13,9 +56,9 @@ body {
   background-color: #3fbbc0;
   height: 40px;
   transition: all 0.5s;
-  font-family: 'SF UI Display Light';
+  font-family: "SF UI Display Light";
 }
-#topbar p{
+#topbar p {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -23,30 +66,30 @@ body {
 }
 
 /* NavBar - Marcos */
-#logo-clinica{
-    max-width: 150px;
+#logo-clinica {
+  max-width: 150px;
 }
 
-nav{
-  font-family: 'SF UI Display Medium';
+nav {
+  font-family: "SF UI Display Medium";
 }
-.navbar{
+.navbar {
   background-color: #fff;
 }
-#celest--borde{
-  border:1px solid #00adb5 ;
+#celest--borde {
+  border: 1px solid #00adb5;
   margin-right: 0.3rem;
   color: #00adb5 !important;
 }
-#celest--borde:hover{
-  background-color:#00adb5;
-  color: #fff !important;
-}
-#celest--boton{
+#celest--borde:hover {
   background-color: #00adb5;
   color: #fff !important;
 }
-#celest--boton:hover{
+#celest--boton {
+  background-color: #00adb5;
+  color: #fff !important;
+}
+#celest--boton:hover {
   border: 1px solid #00adb5 !important;
   background-color: transparent !important;
   color: #00adb5 !important;
@@ -68,30 +111,34 @@ nav{
 /* Servicios - Martin Toro*/
 #servicios{
   height: 100vh;
+.servicios {
+  height: 35em;
+  margin-bottom: 4%;
 }
-.servicios--titulo{
+.servicios--titulo {
   width: 100%;
 }
-.servicios--titulo h2{
+.servicios--titulo h2 {
+  padding-top: 2%;
   font-size: 33px;
-  font-family: 'SF UI Display bold';
+  font-family: "SF UI Display bold";
   text-align: center;
   color: #205f92;
 }
-.servicios--titulo p{
-  font-family: 'SF UI Display Light';
+.servicios--titulo p {
+  font-family: "SF UI Display Light";
   font-weight: 600;
   text-align: center;
   font-size: 17px;
 }
-.servicios--cards{
+.servicios--cards {
   display: grid;
   grid-template-columns: 28% 28% 28%;
   justify-content: space-around;
   width: 100%;
   height: 50vh;
 }
-.cardServ{
+.cardServ {
   border-radius: 1em;
   display: flex;
   flex-direction: column;
@@ -109,7 +156,7 @@ nav{
 }
 /*Inicio About Marcos*/
 
-.ms-about-section{
+.ms-about-section {
   padding: 40px 40px 0px 40px;
 }
 
@@ -118,43 +165,43 @@ nav{
   background-size: cover;
 }
 
-.ms-fotopablo{
+.ms-fotopablo {
   width: 400px;
   height: 400px;
-  object-fit: co;
+  object-fit: cover;
 }
 
-.ms-fotosergio{
+.ms-fotosergio {
   height: 400px;
   width: 400px;
   object-fit: cover;
 }
 
-.ms-fotomarcos{
+.ms-fotomarcos {
   height: 400px;
   width: 400px;
   object-fit: cover;
 }
 
-.ms-fotooscar{
+.ms-fotooscar {
   height: 400px;
   width: 400px;
   object-fit: cover;
 }
 
-.ms-fotomartin{
+.ms-fotomartin {
   height: 400px;
   width: 400px;
   object-fit: cover;
 }
 
-.ms-fotomatias{
+.ms-fotomatias {
   height: 400px;
   width: 400px;
   object-fit: cover;
 }
 
-.carousel-inner{
+.carousel-inner {
   width: 400px;
   height: 400px;
   border-radius: 100%;
@@ -162,55 +209,57 @@ nav{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(16, 189, 233);
 }
 
-.carousel-item img{
+.carousel-item img {
   overflow: hidden;
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.cardServ p{
-  font-family: 'SF UI Display Medium';
+.cardServ p {
+  font-family: "SF UI Display Medium";
   font-weight: 500;
   font-size: 18px;
   color: #000;
 }
-.cardServ svg{
+.cardServ svg {
   display: flex;
   align-self: center;
 }
 
 /*  Nuestro Equipo - Martin Toro */
-.equipo--titulo{
+.equipo--titulo {
   width: 100%;
   text-align: center;
 }
-.equipo--titulo p{
+.equipo--titulo p {
   margin: 0;
   color: grey;
   font-size: 1em;
-  font-family: 'SF UI Display Medium';
+  font-family: "SF UI Display Medium";
   padding-bottom: 2%;
 }
-.equipo--titulo h1{
+.equipo--titulo h1 {
   padding-top: 2%;
   font-size: 2.2em;
-  font-family: 'SF UI Display Bold';
+  font-family: "SF UI Display Bold";
   color: #205f92;
   margin: 0;
 }
-.container--equipo{
+.container--equipo {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 .card {
-  width: 14em;
+  width: 400px;
+  height: 400px;
   margin-bottom: 3%;
   border-style: none !important;
 }
 .card-img-top {
   height: 15em;
+  object-fit: cover;
 }
-.card-body{
+.card-body {
   height: 4rem !important;
   padding: 0 !important;
   display: flex;
@@ -218,27 +267,27 @@ nav{
   justify-content: center;
   align-items: center;
 }
-.card-body h1{
+.card-body h1 {
   font-size: 1em !important;
-  font-family: 'SF UI Display Bold';
+  font-family: "SF UI Display Bold";
   margin: 0;
   color: #008fd5;
   text-align: center;
 }
-.card-body p{
+.card-body p {
   font-size: 13px !important;
   color: #6f8ba4;
-  font-family: 'SF UI Display Light';
+  font-family: "SF UI Display Light";
   font-weight: 500;
 }
-.mas--prof{
+.mas--prof {
   width: 100%;
   text-align: center;
-  margin-bottom: 5%;;
+  margin-bottom: 5%;
 }
-.mas--prof a{
+.mas--prof a {
   font-size: 15px;
-  font-family: 'SF UI Display Medium';
+  font-family: "SF UI Display Medium";
   text-decoration: none;
   text-align: center;
   padding: 0.5em 1em;
@@ -246,7 +295,7 @@ nav{
   background-color: #205f92;
   border-radius: 5em;
 }
-.mas--prof a:hover{
+.mas--prof a:hover {
   background-color: #00adb5;
   color: #fff;
 }
@@ -294,7 +343,7 @@ nav{
   align-items: center;
   background-color: whitesmoke;
 }
-.contacto--der form{
+.contacto--der form {
   display: flex;
   flex-direction: column;
   width: 35vw;
@@ -306,7 +355,7 @@ nav{
 }
 
 /* Footer */
-.footer-CF{
+.footer-CF {
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -316,55 +365,53 @@ nav{
   color: white;
 }
 
-.container-footer-all{
+.container-footer-all {
   width: 100%;
   max-width: 1300px;
   margin: auto;
   padding: 40px 40px 0px 40px;
-  
 }
 
-.container-CF{
+.container-CF {
   display: flex;
   justify-content: space-around;
 }
 
-.colum-logo{
+.colum-logo {
   max-width: 400px;
 }
 
-.colum-logo h1{
+.colum-logo h1 {
   display: flex;
   justify-content: center;
   font-size: 22px;
 }
 
-.colum-logo p{
+.colum-logo p {
   font-size: 15px;
   color: aliceblue;
   margin-top: 20px;
 }
 
-.colum-logo img{
+.colum-logo img {
   width: 100%;
   height: auto;
   transform: scale(1.1);
 }
 
-.colum-redes h1{
+.colum-redes h1 {
   display: flex;
   justify-content: center;
   font-size: 23px;
 }
 
-.ms_logosRedes{
-flex-direction: column;
-display: flex;
-align-items: flex-end;
-
+.ms_logosRedes {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
 }
 
-.colum-redes .row{
+.colum-redes .row {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
@@ -372,7 +419,7 @@ align-items: flex-end;
   margin-right: 0px;
 }
 
-.colum-redes .row img{
+.colum-redes .row img {
   background-color: white;
   width: 36px;
   height: 36px;
@@ -381,50 +428,49 @@ align-items: flex-end;
   border-radius: 25%;
 }
 
-.ms_iconos:hover{
-  transform:scale(1.1);
+.ms_iconos:hover {
+  transform: scale(1.1);
 }
 
-.colum-redes .row label{
-    margin-top: 10px;
-    margin-left: 20px;
-    color: aliceblue;
+.colum-redes .row label {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: aliceblue;
 }
 
-.colum-informacion{
-    max-width: 400px;
+.colum-informacion {
+  max-width: 400px;
 }
 
-.colum-informacion h1{
+.colum-informacion h1 {
   font-size: 22px;
 }
 
-.row-info{
+.row-info {
   margin-top: 22px;
   display: flex;
 }
 
-.row-info img{
+.row-info img {
   width: 36px;
   height: 36px;
   background-color: white;
   object-fit: cover;
   border-radius: 25%;
-
 }
 
-.row-info label{
+.row-info label {
   margin-top: 0px;
   margin-left: 20px;
   max-width: 150px;
 }
 
-.container-base{
+.container-base {
   width: 100%;
   background-color: whitesmoke;
 }
 
-.footer-base{
+.footer-base {
   max-width: 1300px;
   margin: auto;
   display: flex;
@@ -436,29 +482,57 @@ align-items: flex-end;
   color: white;
 }
 
-.container-base .information a{
+.container-base .information a {
   text-decoration: none;
   color: white;
 }
 
-@media screen and (max-width: 1100px){
-  .container-CF{
+@media screen and (max-width: 1100px) {
+  .container-CF {
     flex-wrap: wrap;
   }
 
-  .colum-logo{
+  .colum-logo {
     max-width: 100%;
   }
-  .colum-redes, .colum-informacion{
+  .colum-redes,
+  .colum-informacion {
     margin-top: 40px;
   }
-  .container-base .information{
+  .container-base .information {
     margin-left: 40px;
   }
+  .container--equipo{
+    display: block;
+    max-width: 100%;
+  }
+  .ms-about-section{
+    max-width: 100%;
+  }
+
+  .card{
+    width: 100%;
+  }
+  .card img{
+    width: 100%;
+  }
+
+  .mlt--lineavida img{
+  max-width: 100%;
+}
+.container--contacto{
+  width: 100%;
+  display: block;
+}
+
+/*Card Doctor - Marcos*/
+
+#container-Doctor{
+  background:brown;
 }
 
 /* STYLE ERROR 404 - OSCAR */
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -469,30 +543,31 @@ align-items: flex-end;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Raleway', sans-serif;
-  color: rgb(56,56,56);
-
+  font-family: "Raleway", sans-serif;
+  color: rgb(56, 56, 56);
 }
 
-.o_wrapper{
+.o_wrapper {
   display: flex;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
 }
-.o_wrapper .o_message{
+.o_wrapper .o_message {
   font-size: 1.5rem;
   padding: 20px;
   width: 100%;
   text-align: center;
 }
 .o_wrapper .o_btn {
-  background: rgb(0,195,154);
+  background: rgb(0, 195, 154);
   padding: 20px;
   font-size: 1.5rem;
   text-decoration: none;
   color: #fff;
 }
-.o_wrapper .o_btn:hover { background: rgb(0, 231, 201);}
-.o_wrapper .o_copyRights {margin-top: 50px;}
-
-/* Carousel */ 
+.o_wrapper .o_btn:hover {
+  background: rgb(0, 231, 201);
+}
+.o_wrapper .o_copyRights {
+  margin-top: 50px;
+}

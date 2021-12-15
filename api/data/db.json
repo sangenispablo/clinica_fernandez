@@ -1,0 +1,266 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "username": "pablo",
+      "email": "pablo@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "username": "sergio",
+      "email": "sergio@gmail.com",
+      "password": "123456",
+      "id": 3
+    }
+  ],
+  "services": [
+    {
+      "Especialidad": "Cardiología",
+      "id": "01"
+    },
+    {
+      "Especialidad": "Neurología",
+      "id": "02"
+    },
+    {
+      "Especialidad": "Ortopedia",
+      "id": "03"
+    },
+    {
+      "Especialidad": "Ginecología",
+      "id": "04"
+    },
+    {
+      "Especialidad": "Cirugía Dental",
+      "id": "05"
+    },
+    {
+      "Especialidad": "Gastroenterología",
+      "id": "06"
+    }
+  ],
+  "doctors": [
+    {
+      "esp": "Cardiologia",
+      "id": 1,
+      "name": "Dr.Cafferata Alberto M.",
+      "image": "../img/img-doctores/1.jpeg"
+    },
+    {
+      "esp": "Cardiologia",
+      "id": 2,
+      "name": "Dr. Lax Jorge A.",
+      "image": "../img/img-doctores/2h.jpeg"
+    },
+    {
+      "esp": "Cardiologia",
+      "id": 3,
+      "name": "Dr. Carrizo Hugo",
+      "image": "../img/img-doctores/25h.jpeg"
+    },
+    {
+      "esp": "Cardiologia",
+      "id": 4,
+      "name": "Dr. Zeballos Miguel",
+      "image": "../img/img-doctores/5h.jpeg"
+    },
+    {
+      "esp": "Cardiologia",
+      "id": 5,
+      "name": "Dr. Juarez Carlos",
+      "image": "../img/img-doctores/11h.jpeg"
+    },
+    {
+      "esp": "Cardiologia",
+      "id": 6,
+      "name": "Dr. Nuñez Juan",
+      "image": "../img/img-doctores/12h.jpeg"
+    },
+    {
+      "esp": "Neurologia",
+      "id": 7,
+      "name": "Dr. Quintana Mario",
+      "image": "../img/img-doctores/13h.jpeg"
+    },
+    {
+      "esp": "Neurologia",
+      "id": 8,
+      "name": "Dr. Blass Pablo",
+      "image": "../img/img-doctores/14h.jpeg"
+    },
+    {
+      "esp": "Neurologia",
+      "id": 9,
+      "name": "Dra. Molina Edgar",
+      "image": "../img/img-doctores/16h.jpeg"
+    },
+    {
+      "esp": "Neurologia",
+      "id": 10,
+      "name": "Dra. Gomez Ramon",
+      "image": "../img/img-doctores/17h.jpeg"
+    },
+    {
+      "esp": "Neurologia",
+      "id": 11,
+      "name": "Dra. Gonzalez Oscar",
+      "image": "../img/img-doctores/19h.jpeg"
+    },
+    {
+      "esp": "Neurologia",
+      "id": 12,
+      "name": "Dr. Santoni Juan",
+      "image": "../img/img-doctores/21h.jpeg"
+    },
+    {
+      "esp": "Ortopedia",
+      "id": 13,
+      "name": "Dra. Lora Alvarez Luis",
+      "image": "../img/img-doctores/22h.jpeg"
+    },
+    {
+      "esp": "Ortopedia",
+      "id": 14,
+      "name": "Dr. Alcantara Luis",
+      "image": "../img/img-doctores/23h.jpeg"
+    },
+    {
+      "esp": "Ortopedia",
+      "id": 15,
+      "name": "Dr. Elmudesi Antonio",
+      "image": "../img/img-doctores/24h.jpeg"
+    },
+    {
+      "esp": "Ortopedia",
+      "id": 16,
+      "name": "Dr. De Pena Rojas Sergio",
+      "image": "../img/img-doctores/25h.jpeg"
+    },
+    {
+      "esp": "Ortopedia",
+      "id": 17,
+      "name": "Dr. Domino Richard",
+      "image": "../img/img-doctores/26h.jpeg"
+    },
+    {
+      "esp": "Ortopedia",
+      "id": 18,
+      "name": "Dr. Marcos Mateo",
+      "image": "../img/img-doctores/29h.jpeg"
+    },
+    {
+      "esp": "Ginecologia",
+      "id": 19,
+      "name": "Dra. Frankenberg Tamara",
+      "image": "../img/img-doctores/3m.jpeg"
+    },
+    {
+      "esp": "Ginecologia",
+      "id": 20,
+      "name": "Dra. Fernandez Elisa",
+      "image": "../img/img-doctores/4m.jpeg"
+    },
+    {
+      "esp": "Ginecologia",
+      "id": 21,
+      "name": "Dra. Paredes Rosa ",
+      "image": "../img/img-doctores/6m.jpeg"
+    },
+    {
+      "esp": "Ginecologia",
+      "id": 22,
+      "name": "Dra. Ramos Rosa ",
+      "image": "../img/img-doctores/7m.jpeg"
+    },
+    {
+      "esp": "Ginecologia",
+      "id": 23,
+      "name": "Dr. Rojas Grullon Luis ",
+      "image": "../img/img-doctores/30h.jpeg"
+    },
+    {
+      "esp": "Ginecologia",
+      "id": 24,
+      "name": "Dr. Santana Eleazar ",
+      "image": "../img/img-doctores/31h.jpeg"
+    },
+    {
+      "esp": "Cirugia Dental",
+      "id": 25,
+      "name": "Dr. Brache Giancarlo ",
+      "image": "../img/img-doctores/32h.jpeg"
+    },
+    {
+      "esp": "Cirugia Dental",
+      "id": 26,
+      "name": "Dr. Cordero Rogelio",
+      "image": "../img/img-doctores/33h.jpeg"
+    },
+    {
+      "esp": "Cirugia Dental",
+      "id": 26,
+      "name": "Dra. Denta Sana Clinic",
+      "image": "../img/img-doctores/8m.jpeg"
+    },
+    {
+      "esp": "Cirugia Dental",
+      "id": 28,
+      "name": "Dr. Franco Octavio ",
+      "image": "../img/img-doctores/34h.jpeg"
+    },
+    {
+      "esp": "Cirugia Dental",
+      "id": 29,
+      "name": "Dra. Lopez Diana ",
+      "image": "../img/img-doctores/9m.jpeg"
+    },
+    {
+      "esp": "Cirugia Dental",
+      "id": 30,
+      "name": "Dra. Gonzalez Cabral Ana ",
+      "image": "../img/img-doctores/10m.jpeg"
+    },
+    {
+      "esp": "Gastroenterologia",
+      "id": 31,
+      "name": "Dr. Jose Juan Castillo",
+      "image": "../img/img-doctores/35h.jpeg"
+    },
+    {
+      "esp": "Gastroenterologia",
+      "id": 32,
+      "name": "Dr. Jorge Marte",
+      "image": "../img/img-doctores/36h.jpeg"
+    },
+    {
+      "esp": "Gastroenterologia",
+      "id": 33,
+      "name": "Dra. Acosta Victoria ",
+      "image": "../img/img-doctores/15m.jpeg"
+    },
+    {
+      "esp": "Gastroenterologia",
+      "id": 34,
+      "name": "Dra. Barrera Laura",
+      "image": "../img/img-doctores/20m.jpeg"
+    },
+    {
+      "esp": "Gastroenterologia",
+      "id": 35,
+      "name": "Dra. Nivar Laura",
+      "image": "../img/img-doctores/27m.jpeg"
+    },
+    {
+      "esp": "Gastroenterologia",
+      "id": 36,
+      "name": "Dr. Tejeda Raul",
+      "image": "../img/img-doctores/28m.jpeg"
+    }
+  ]
+}

@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>pagina de contacto</title>
 </head>
-<body class="pagina-ss">
-     <div id="topbar" class="d-flex align-items-center">
-          <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-              <div class="align-items-center d-none d-md-flex">
+<body>
+     <div id="topbar" class="d-flex align-items-center fixed-top">
+          <div class="container d-flex  justify-content-center justify-content-between">
+              <div class="align-items-center d-none d-md-flex align-items-center">
                   <p><i class="far fa-clock"></i> Horarios: Lunes a Viernes, de 7:30 a 22:30.</p>
               </div>
               <div class="d-flex align-items-center">
@@ -24,18 +24,22 @@
               </div>
           </div>
       </div>
-  <div class="container-xl-2">
+      <!--contenido-->
+      <div class="flex-container align-items-center justify-content-between">
     <h2>Complete sus datos</h2>
-
     <form name="fvalida">
       <table>
-      <tr>
+      <tr> 
            <td>Nombre y Apellido </td>
-           <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+           <td><input type="text" name="nombre"  maxlength="40" ></td>
       </tr>
       <tr>
+        <td>Email</td>
+        <td><input type="email" name="email"  maxlength="30"></td>
+   </tr>
+      <tr>
            <td>Edad: </td>
-           <td><input type="number" name="edad" size="3" maxlength="2"></td>
+           <td><input type="number" name="edad"  maxlength="2"></td>
       </tr>
       <tr>
            <td>Motivo de consulta</td>
@@ -48,15 +52,21 @@
            </select>
            </td>
       </tr>
+      <tr >
+        <td>Mensaje</td>
+        <td><input type="text" name="texto" maxlength="150" id="mensaje"></td>
+   </tr>
       <tr>
            <td colspan="2" align="center"><button class="btn" onclick="valida_envia()"> Enviar </button></td>
       </tr>
       </table>
       </form>
+      </div>
+      
 
       
 
-  </div>
+
   
 
 <script src="js/sergio.js" ></script>
