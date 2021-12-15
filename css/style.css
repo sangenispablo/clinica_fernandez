@@ -308,6 +308,15 @@ nav {
 .contacto--izq {
   margin-left: 1%;
 }
+.contacto--izq ul {
+  list-style: none;
+}
+.contacto--izq li a{
+  text-decoration: none;
+  color: #000;
+  font-family: 'SF UI Display Semibold';
+  font-weight: 700;
+}
 .contacto--der {
   width: 49vw;
   margin-left: 1%;
