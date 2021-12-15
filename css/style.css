@@ -135,6 +135,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
   box-shadow: #205f92 0px 2px 8px 0px;
 }
 
@@ -541,8 +542,7 @@ nav {
 .o_wrapper .o_btn:hover {
   background: rgb(0, 231, 201);
 }
+
 .o_wrapper .o_copyRights {
   margin-top: 50px;
 }
-
-/* Carousel */
