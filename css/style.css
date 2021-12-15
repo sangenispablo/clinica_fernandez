@@ -299,33 +299,83 @@ nav {
 }
 
 /* Contacto - Martin Toro */
+.contacto {
+  height: 30vh;
+  margin-bottom: 5%;
+  background-color: blueviolet;
+}
 .container--contacto {
   display: flex;
+  justify-content: space-evenly;
 }
 .contacto--titulo h1 {
-  font-family: "SF UI Display Light";
+  font-family: "SF UI Display Semibold";
+  text-align: center;
+  font-size: 2.2em;
+  padding-bottom: 2%;
 }
 .contacto--izq {
-  margin-left: 1%;
+  width: 48vw;
+  background-color: #3fbbc0;
 }
-.contacto--izq ul {
+.contacto--izq iframe{
+  width: 100%;
+}
+ .contacto--izq ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
+.contacto--izq ul li{
+  padding-bottom: 1%;
+} 
 .contacto--izq li a{
   text-decoration: none;
   color: #000;
   font-family: 'SF UI Display Semibold';
   font-weight: 700;
 }
+
+
 .contacto--der {
-  width: 49vw;
-  margin-left: 1%;
-  color: #00adb5;
+  width: 48vw;
+  opacity: 0.4;
+  background-color: grey;
+
 }
-.contacto--der form {
+ .contacto--der form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
 }
+.contacto--der form input{
+  border-radius: 0.5em;
+  box-shadow: none;
+  border: 2px solid #00ADB5;
+  width: 95%;
+  margin-bottom: 1%;
+  padding: 3%;
+}
+.contacto--der form textarea{
+  border: 2px solid #00ADB5;
+  width: 95%;
+  border-radius: 0.5em;
+  margin-bottom: 2%;
+}
+ .contacto--der form button{
+  background: none;
+  border-radius: 0.5em;
+  border: none;
+  box-shadow: #205f92 0px 2px 8px 0px;
+  margin-bottom: 2%;
+  padding: 1%;
+  background-color: #2e81f2;
+  color: #fff;
+
+} 
 
 /* Footer */
 .footer-CF {
@@ -459,90 +509,4 @@ nav {
   text-decoration: none;
   color: white;
 }
-
-@media screen and (max-width: 1100px) {
-  .container-CF {
-    flex-wrap: wrap;
-  }
-
-  .colum-logo {
-    max-width: 100%;
-  }
-  .colum-redes,
-  .colum-informacion {
-    margin-top: 40px;
-  }
-  .container-base .information {
-    margin-left: 40px;
-  }
-  .container--equipo{
-    display: block;
-    max-width: 100%;
-  }
-  .ms-about-section{
-    max-width: 100%;
-  }
-
-  .card{
-    width: 100%;
-  }
-  .card img{
-    width: 100%;
-  }
-
-  .mlt--lineavida img{
-  max-width: 100%;
-}
-.container--contacto{
-  width: 100%;
-  display: block;
-}
-
-/*Card Doctor - Marcos*/
-
-#container-Doctor{
-  background:brown;
-}
-
-/* STYLE ERROR 404 - OSCAR */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-.os_body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: "Raleway", sans-serif;
-  color: rgb(56, 56, 56);
-}
-
-.o_wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.o_wrapper .o_message {
-  font-size: 1.5rem;
-  padding: 20px;
-  width: 100%;
-  text-align: center;
-}
-.o_wrapper .o_btn {
-  background: rgb(0, 195, 154);
-  padding: 20px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #fff;
-}
-.o_wrapper .o_btn:hover {
-  background: rgb(0, 231, 201);
-}
-.o_wrapper .o_copyRights {
-  margin-top: 50px;
-}
-
 /* Carousel */
