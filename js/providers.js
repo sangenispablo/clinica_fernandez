@@ -61,6 +61,20 @@ export const getDoctors = async () => {
   }
 };
 
+// esta funcion lo que hace es recibir un parametro que uso como parametro a la url de la API
+// en el caso de doctors algo asi: localhost:3000/doctors?esp=Cardiologia
+// es la unica diferencia con getDoctors
+export const getDoctorsFilter = async (filtro) => {
+  try {
+    const resource = jsUrl + `doctors?esp=${filtro}`;
+    const resp = await fetch(resource);
+    const data = await resp.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};
+
 
 export const getEspecialidades = async () => {
   try {
