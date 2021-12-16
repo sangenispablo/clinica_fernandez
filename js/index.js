@@ -42,6 +42,8 @@ getEspecialidades().then((especialidades) => {
 });
 
 
+
+
 /**
  * Cuando todo lo de arriba se hizo sacao el preload
  */
@@ -50,4 +52,9 @@ if (preloader) {
   window.addEventListener("load", () => {
     preloader.remove();
   });
+}
+
+
+function scrollServices() {
+  window.scrollTo(0, 525);
 }

@@ -102,7 +102,7 @@ nav {
 }
 /* Servicios - Martin Toro*/
 .servicios {
-  height: 35em;
+  height: 100vh;
   margin-bottom: 4%;
 }
 .servicios--titulo {
@@ -126,7 +126,7 @@ nav {
   display: grid;
   grid-template-columns: 28% 28% 28%;
   justify-content: space-around;
-  height: 75%;
+  
 }
 .cardServ {
   border-radius: 1em;
@@ -225,6 +225,9 @@ nav {
 }
 
 /*  Nuestro Equipo - Martin Toro */
+#nuestro-equipo{
+  height: 100vh;
+}
 .equipo--titulo {
   width: 100%;
   text-align: center;
@@ -301,7 +304,7 @@ nav {
 
 /* Contacto - Martin Toro */
 .contacto {
-  height: 30vh;
+  height: 100vh;
   margin-bottom: 5%;
   background-color: blueviolet;
 }
