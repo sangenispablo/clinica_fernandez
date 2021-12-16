@@ -10,7 +10,9 @@ body {
   padding-bottom: 40px;
   background-color: #f5f5f5;
 }
-
+.formreg h1{
+  font-family: 'SF UI Display Semibold';
+}
 .form-signin {
   width: 100%;
   max-width: 330px;
@@ -42,4 +44,9 @@ body {
   /* margin-bottom: -1px; */
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.regist a{
+  text-decoration: none;
+  font-family: 'SF UI Display Semibold';
 }
