@@ -48,7 +48,7 @@ body {
   }
 }
 
-/* TopBar - Marcos*/
+/* TopBar - Marcos y Martin Toro*/
 #topbar {
   background: #3fbbc0;
   height: 40px;
@@ -62,7 +62,7 @@ body {
   margin: 0;
 }
 
-/* NavBar - Marcos */
+/* NavBar - Marcos y Martin Toro*/
 #logo-clinica {
   max-width: 150px;
 }
@@ -75,8 +75,8 @@ nav {
 }
 #celest--borde {
   border: 1px solid #00adb5;
-  margin-right: 0.3rem;
   color: #00adb5 !important;
+  margin-bottom: 1%;
 }
 #celest--borde:hover {
   background-color: #00adb5;
@@ -95,14 +95,25 @@ nav {
   color: #00adb5 !important;
 }
 
+/* CONTAINER GENERAL GRID */
+.container--gr{
+  display: grid;
+  grid-template-columns: repeat(1fr);
+}
+
 /* Linea de vida - Martin Toro */
 .mlt--lineavida {
-  margin-top: 2%;
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-/* Servicios - Martin Toro*/
+.mlt--lineavida img{
+  width: 95%;
+  margin: 1%;
+}
+
+/* Servicios - Martin Toro */
 .servicios {
-  height: 100vh;
   margin-bottom: 4%;
 }
 .servicios--titulo {
@@ -110,7 +121,7 @@ nav {
 }
 .servicios--titulo h2 {
   padding-top: 2%;
-  font-size: 33px;
+  font-size: 1.7em;
   font-family: "SF UI Display bold";
   text-align: center;
   color: #205f92;
@@ -120,153 +131,60 @@ nav {
   font-weight: 600;
   text-align: center;
   padding-bottom: 2%;
-  font-size: 17px;
+  font-size: 13px;
 }
 .servicios--cards {
   display: grid;
-  grid-template-columns: 28% 28% 28%;
-  justify-content: space-around;
-  
+  grid-template-columns: repeat(1fr);
+  gap: 1em;
 }
-.cardServ {
-  border-radius: 1em;
-  margin-bottom: 5%;
+.cardServ{
+  width: 95%;
+  height: 10rem;
   display: flex;
-  flex-direction: column;
+  border-radius: 1em;
+  flex-direction: column-reverse;
   justify-content: center;
-  text-align: center;
   align-items: center;
   box-shadow: #205f92 0px 2px 8px 0px;
+  margin: 0 auto;
+}
+.cardServ p{
+  font-family: 'SF UI Display Medium';
+  font-size: 1.3em;
+}
+.cardServ:hover{
+background-color: #205f92;
+color: #fff;
 }
 
-.cardServ:hover,
-#Path_64:hover {
-  background-color: #205f92;
-  color: #fff;
-  fill: #fff !important;
-}
-.cardServ:hover {
-  background: #00adb5;
-  fill: #fff;
-}
-.cardServ svg {
-  margin: auto;
-}
+/* Nuestro Equipo - Martin Toro */
 
-/*Inicio About Marcos*/
-
-.ms-about-section {
-  padding: 40px 40px 0px 40px;
-}
-
-#ms-about {
-  background-image: url("/img/carousel/clinic-3.jpg");
-  background-size: cover;
-}
-
-.ms-fotopablo {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-}
-
-.ms-fotosergio {
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-}
-
-.ms-fotomarcos {
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-}
-
-.ms-fotooscar {
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-}
-
-.ms-fotomartin {
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-}
-
-.ms-fotomatias {
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-}
-
-.carousel-inner {
-  width: 400px;
-  height: 400px;
-  border-radius: 100%;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(16, 189, 233);
-}
-
-.carousel-item img {
-  overflow: hidden;
-  object-fit: cover;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.cardServ p {
-  font-family: "SF UI Display Medium";
-  font-weight: 500;
-  font-size: 18px;
-  color: #000;
-}
-.cardServ svg {
-  display: flex;
-  align-self: center;
-}
-
-/*  Nuestro Equipo - Martin Toro */
-#nuestro-equipo{
-  height: 100vh;
-}
-.equipo--titulo {
-  width: 100%;
-  text-align: center;
+.equipo--titulo h1 {
+padding-top: 2%;
+font-size: 1.7em;
+font-family: "SF UI Display Bold";
+color: #205f92;
+text-align: center;
 }
 .equipo--titulo p {
-  margin: 0;
-  color: grey;
-  font-size: 1em;
-  font-family: "SF UI Display Medium";
-  padding-bottom: 2%;
+margin: 0;
+color: grey;
+font-size: 1em;
+font-family: "SF UI Display Medium";
+padding-bottom: 2%;
+text-align: center;
 }
-.equipo--titulo h1 {
-  padding-top: 2%;
-  font-size: 2.2em;
-  font-family: "SF UI Display Bold";
-  color: #205f92;
-  margin: 0;
+.container--equipo{
+width: 90%;
+margin: 0 auto;
 }
-.container--equipo {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-.card {
-  width: 400px;
-  height: 400px;
-  margin-bottom: 3%;
-  border-style: none !important;
-}
-.card-img-top {
-  height: 15em;
-  object-fit: cover;
+.card{
+  margin-bottom: 4%;
 }
 .card-body {
-  height: 4rem !important;
-  padding: 0 !important;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .card-body h1 {
@@ -302,215 +220,297 @@ nav {
   color: #fff;
 }
 
-/* Contacto - Martin Toro */
-.contacto {
-  height: 100vh;
-  margin-bottom: 5%;
-  background-color: blueviolet;
+/* Contacto */
+.contacto{
+    display: flex;
+    flex-direction: column;
 }
 .container--contacto {
-  display: flex;
   justify-content: space-evenly;
 }
 .contacto--titulo h1 {
-  font-family: "SF UI Display Semibold";
+  font-family: "SF UI Display Bold";
+  color: #205f92;
   text-align: center;
-  font-size: 2.2em;
-  padding-bottom: 2%;
+  font-size: 2em;
+  padding-bottom: 1%;
 }
 .contacto--izq {
-  width: 48vw;
-  background-color: #3fbbc0;
+  margin: 1.5% 1.5% 1.5% 1.5%;
+  border-radius: 0.5em;
+  box-shadow: #205f92 0px 2px 8px 0px;
 }
 .contacto--izq iframe{
   width: 100%;
+  height: 18em;
+  border-radius: 0.5em;
 }
  .contacto--izq ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-items: center;
-  align-items: center;
 }
 .contacto--izq ul li{
   padding-bottom: 1%;
 } 
 .contacto--izq li a{
   text-decoration: none;
-  color: #000;
+  color: #393e46;
   font-family: 'SF UI Display Semibold';
   font-weight: 700;
 }
-
+.contacto--izq a i{
+  color: #00ADB5;
+}
+.cizq--info{
+  width: 100%;
+  height: ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .contacto--der {
-  width: 48vw;
-  opacity: 0.4;
-  background-color: grey;
-
-}
- .contacto--der form {
+  margin: 1em 0.3em 0.3em 0.3em;
+  border-radius: 0.5em;
+  background-color: rgba(63, 188, 192, 0.5);
+  box-shadow: #205f92 0px 2px 8px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 3%;
+  padding: 1em 0em;
+  
 }
-.contacto--der form input{
-  border-radius: 0.5em;
-  box-shadow: none;
-  border: 2px solid #00ADB5;
-  width: 95%;
-  margin-bottom: 1%;
-  padding: 3%;
-}
-.contacto--der form textarea{
-  border: 2px solid #00ADB5;
-  width: 95%;
-  border-radius: 0.5em;
-  margin-bottom: 2%;
-}
- .contacto--der form button{
-  background: none;
-  border-radius: 0.5em;
-  border: none;
-  box-shadow: #205f92 0px 2px 8px 0px;
-  margin-bottom: 2%;
-  padding: 1%;
-  background-color: #2e81f2;
-  color: #fff;
-
-} 
-
-/* Footer */
-.footer-CF {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  background: rgb(45, 48, 51);
-  color: white;
-}
-
-.container-footer-all {
-  width: 100%;
-  max-width: 1300px;
-  margin: auto;
-  padding: 40px 40px 0px 40px;
-}
-
-.container-CF {
+.contacto--der form{
   display: flex;
-  justify-content: space-around;
-}
-
-.colum-logo {
-  max-width: 400px;
-}
-
-.colum-logo h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 22px;
-}
-
-.colum-logo p {
-  font-size: 15px;
-  color: aliceblue;
-  margin-top: 20px;
-}
-
-.colum-logo img {
-  width: 100%;
-  height: auto;
-  transform: scale(1.1);
-}
-
-.colum-redes h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 23px;
-}
-
-.ms_logosRedes {
   flex-direction: column;
-  display: flex;
-  align-items: flex-end;
+  width: 90%;
+}
+  .contacto--der input{
+  margin-bottom: 1%;
+  height: 2em;
+  border-radius: 0.5em;
+  border-style: none;
+  color: ;
+}
+.contacto--der input::placeholder{
+    color: grey;
+    opacity: 0.5;
+}
+.contacto--der input:focus{
+  outline: none;
+}
+.contacto--der input::placeholder, input:focus{
+  font-family: 'SF UI Display Light';
+  padding-left: 2%;
+}
+.contacto--der textarea{
+  margin-bottom: 1%;
+  height: 60%;
+  padding-left: 2%;
+  font-family: 'SF UI Display Light';
+  border-radius: 0.5em;
+  border-style: none;
+}
+.contacto--der textarea::placeholder{
+  color: grey;
+  opacity: 0.5;
+}
+.contacto--der textarea:focus{
+  outline: none;
+}
+#boton--cform{
+  margin-top: 1em;
+  width: 9em;
+  height: 2.4em;
+  background-color: #fff;
+  font-family: 'SF UI Display Semibold';
+  color: #00ADB5;
+  border-radius: 0.5em;
+  border-style: none;
+  font-size: 14px;
+}
+#boton--cform:hover{
+  background-color: #00ADB5 !important;
+  color: #fff;
+  box-shadow: #ffffff 0.2px 0.2px 0.5px 1px;
 }
 
-.colum-redes .row {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-around;
-  margin-left: 5px;
-  margin-right: 0px;
+/* Footer Martin Toro */
+.container--footer{
+  display: grid;
+  margin-top: 2em;
+  background-color: whitesmoke;
+  font-family: 'SF UI Display Medium';
 }
-
-.colum-redes .row img {
-  background-color: white;
-  width: 36px;
-  height: 36px;
-  object-fit: cover;
-  padding: 3px;
-  border-radius: 25%;
-}
-
-.ms_iconos:hover {
-  transform: scale(1.1);
-}
-
-.colum-redes .row label {
-  margin-top: 10px;
-  margin-left: 20px;
-  color: aliceblue;
-}
-
-.colum-informacion {
-  max-width: 400px;
-}
-
-.colum-informacion h1 {
-  font-size: 22px;
-}
-
-.row-info {
-  margin-top: 22px;
-  display: flex;
-}
-
-.row-info img {
-  width: 36px;
-  height: 36px;
-  background-color: white;
-  object-fit: cover;
-  border-radius: 25%;
-}
-
-.row-info label {
-  margin-top: 0px;
-  margin-left: 20px;
-  max-width: 150px;
-}
-
-.container-base {
+.izq--1 {
   width: 100%;
-  background: black;
+  text-align: center;
 }
-
-.footer-base {
-  max-width: 1300px;
-  margin: auto;
+.izq--1 p{
+  width: 95%;
+  text-align: center;
+}
+.izq--1 a{
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: center;
 }
-
-.container-base .copyrigth {
-  color: white;
+.izq--1 a img{
+  width: 20em;
+  
+} 
+.izq--social {
+  color: #000;
 }
-
-.container-base .information a {
+.izq--social i {
+  color: #205f92;
+}
+.izq--1 ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 !important;
+}
+.izq--1 ul li{
+  list-style: none;
+  font-size: 2em;
+} 
+.izq--1 li a{
   text-decoration: none;
-  color: white;
 }
-/* Carousel */
+/* izq2 */
+.izq--2{
+  width: 100%;
+}
+.izq--2 h2{
+  font-family: 'SF UI Display Bold';
+  font-size: 22px;
+  padding-top: 8%;
+  padding-bottom: 2%;
+  text-align: center;
+  color: #205f92;
+}
+.izq--2 ul li{
+  list-style: none;
+} 
+.izq--2 li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+.izq--2 ul i{
+  color: #205f92;
+}
+.izq--2 li a:hover{
+  color: #205f92;
+}
+/* medio-1 */
+.medio--1{
+  width: 100%;
+}
+.medio--1 h2{
+  font-family: 'SF UI Display Bold';
+  font-size: 22px;
+  padding-top: 8%;
+  padding-bottom: 2%;
+  text-align: center;
+  color: #205f92;
+}
+.medio--1 ul li{
+  list-style: none;
+} 
+.medio--1 li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+.medio--1 li i{
+  color: #205f92;
+}
+.medio--1 li a:hover{
+  color: #205f92;
+}
+/* der-2 */
+.der--2{
+  width: 100%;
+  
+  text-align: center;
+}
+.der--2 h2{
+  font-family: 'SF UI Display Bold';
+  font-size: 22px;
+  padding-top: 8%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #205f92;
+}
+.der--2 ul {
+  list-style: none; 
+  padding: 0 !important;
+}
+.der--2 li i{
+  color: #205f92;
+}
+.der--2 li a{
+  text-decoration: none;
+  color: #000;
+}
+.der--2 iframe{
+  width: 94%;
+  height: 23vh;
+}
+
+/* Media Queries - Martin Toro */
+@media screen and (min-width: 768px){
+    .cardServ img{
+        width: 5em;
+    }
+    .subcontainer--fo{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .izq--1 img{
+        margin: 5% 0%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .servicios--cards{
+      display: grid;
+      grid-template-columns: repeat(3,1fr); 
+      gap: 1em;
+    }
+    .container--equipo{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1em;
+    }
+    .card img{
+        width: 100%;
+        height: 14em;
+    }
+    .mas--prof{
+        margin-top: 1.5em;
+    }
+    /* Contacto */
+    .container--contacto{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 0.5em;
+       margin: 0 0.5em;
+    }
+    .contacto--izq, .contacto--der{
+        margin: 0;
+    }
+    .container--footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #celest--borde{
+      margin-right: 0.3rem;
+    }
+}

@@ -1,165 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clinica Fernández</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
     <!-- Icons -->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
-    
-</head>
-
-<body>
-
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Marcos - barra de arriba-->
     <div id="topbar" class="d-flex align-items-center">
-        <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-            <div class="align-items-center d-none d-md-flex">
-                <p><i class="fas fa-phone"></i> URGENCIAS:+54 (0381) 4502600 </p>
-            </div>
-            <div class="d-flex align-items-center">
-                <p> <i class=""></i>  <i class="fas fa-envelope"></i>
-                    info@clinica-fernandez.com </p>
-            </div>
+      <div
+        class="
+          container
+          d-flex
+          align-items-center
+          justify-content-center justify-content-md-between
+        "
+      >
+        <div class="align-items-center d-none d-md-flex">
+          <p><i class="fas fa-phone"></i> Urgencias: +54 (0381) 4502600</p>
         </div>
+        <div class="d-flex align-items-center">
+          <p>
+            <i class=""></i>
+            <i class="fas fa-envelope"></i> info@clinica-fernandez.com
+          </p>
+        </div>
+      </div>
     </div>
     <!-- inicio Navbar Marcos -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-clinicaF" href="index.html"
+          ><img
+            src="img/logo-CF.png"
+            id="logo-clinica"
+            alt="logo-clinica"
+            class="d-inline-block"
+        /></a>
 
-        <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <a class="navbar-clinicaF" href="index.html"><img src="img/logo-CF.png" id="logo-clinica" alt="logo-clinica"
-                    class="d-inline-block"></a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarClinica">
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicios--titulo">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#nuestro-equipo">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                    <!-- Pablo Sangenis: este dropdown aparece y desaparece si esta logeado un usuario -->
-                    <li class="nav-item dropdown hide_nav-item" id="dropdown_user">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown"
-                            aria-expanded="false">Usuario</a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown09">
-                            <li><button class="dropdown-item" id="btn_logout">Logout</button></li>
-                        </ul>
-                    </li>
-                    <!-- Pablo Sangenis: boton login (si corresponde tambien el register) aparece o desaparece si es logeado un usuario -->
-                    <!-- utilizo el id para hacer esta accion en JS -->
-                    <li class="nav-item" id="btn_login">
-                        <a class="nav-link btn" id="celest--borde" href="login.html" role="button"><i
-                                class="far fa-user"></i> Iniciar Sesión</a>
-                    </li>
-                    <li class="nav-item" id="btn_register">
-                        <a class="nav-link btn" id="celest--boton" href="register.html" role="button"><i
-                                class="fas fa-signature"></i> Registrarse</a>
-                    </li>
-
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nuestro-equipo">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <!-- Pablo Sangenis: este dropdown aparece y desaparece si esta logeado un usuario -->
+            <li class="nav-item dropdown hide_nav-item" id="dropdown_user">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown09"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Usuario</a
+              >
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <button class="dropdown-item" id="btn_logout">Logout</button>
+                </li>
+              </ul>
+            </li>
+            <!-- Pablo Sangenis: boton login (si corresponde tambien el register) aparece o desaparece si es logeado un usuario -->
+            <!-- utilizo el id para hacer esta accion en JS -->
+            <li class="nav-item" id="btn_login">
+              <a
+                class="nav-link btn"
+                id="celest--borde"
+                href="login.html"
+                role="button"
+                ><i class="far fa-user"></i> Iniciar Sesión</a
+              >
+            </li>
+            <li class="nav-item" id="btn_register">
+              <a
+                class="nav-link btn"
+                id="celest--boton"
+                href="register.html"
+                role="button"
+                ><i class="fas fa-signature"></i> Registrarse</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
+<div class="container--gr">
+    <!-- Slide - Oscar -->
+    <div class="imagen--landing">
+      <img src="img/carousel/img1.png" class="w-100" alt="slide-imagen" />
+    </div>
+    <!-- Fin Slide - Oscar -->
 
-
-    <!-- Imagen Landing -->
-    <section class="imagen--landing">
-        <img src="img/carousel/img1.png" class="w-100" alt="slide-imagen">
-    </section>
-
-    <!-- Linea de Vida -->
-    <!-- <section class="mlt--lineavida">
+    <!-- Imagen Linea de Vida - Martin -->
+    <div class="mlt--lineavida">
         <img src="img/graph-img.svg" alt="linea-vida">
-    </section> -->
-
+    </div> 
+    <!-- Fin Linea de Vida -->
 
     <!-- Servicios - Martin Toro -->
-    <section class="servicios" id="servicios">
-        <div id="servicios--titulo" >
-            <h2 id="stitulo">Servicios</h2>
+    <div class="servicios" id="servicios">
+        <div class="servicios--titulo" >
+            <h2>Servicios</h2>
             <p>Clinica Fernandez cuenta con especialistas en las siguientes areas: </p>
         </div>
         <div class="servicios--cards"></div>
-    </section>
+    </div>
+    <!-- Fin Servicios -->
 
-    <!-- Nuestro Equipo -->
-    <section class="nuestro-equipo" id="nuestro-equipo">
+    <!--  Nuestro Equipo -->
+    <div class="nuestro-equipo" id="nuestro-equipo">
         <div class="equipo--titulo">
             <h1>Conoce nuestro equipo</h1>
             <p>¡Estamos listos para ayudarte!</p>
         </div>
-
-        <div class="container--equipo">
-            <div class="card">
-                <img src="img/matias.jpeg" class="card-img-top" alt="dr-matias-neira">
-                <div class="card-body">
-                    <h1 class="card-text">Matias Neira</h1>
-                    <p class="card-text">Jefe de Neurologia</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/pablo.jpeg" class="card-img-top" alt="dr-pablo-sangenis">
-                <div class="card-body">
-                    <h1 class="card-text">Pablo Sangenis</h1>
-                    <p class="card-text">Jefe de Ginecología</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/fotomarcos.webp" class="card-img-top" alt="dr-marcos-scheuermann">
-                <div class="card-body">
-                    <h1 class="card-text">Marcos Scheuermann</h1>
-                    <p class="card-text">Jefe de Gastroenterología</p>
-                </div>
-                
-            </div>
-            <div class="card">
-                <img src="img/Martin.png" class="card-img-top" alt="dr-martin-toro">
-                <div class="card-body">
-                    <h1 class="card-text">Martín Lautaro Toro Caro</h1>
-                    <p class="card-text">Jefe de Ortopedía</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/Sergio.jpg" class="card-img-top" alt="dr-sergio-stefanoni">
-                <div class="card-body">
-                    <h1 class="card-text">Sergio Stefanoni</h1>
-                    <p class="card-text">Jefe de Cardiologia</p>
-                </div>
+    </div>
+    <div class="container--equipo">
+        <div class="card">
+            <img src="img/matias.jpeg" class="card-img-top" alt="dr-matias-neira">
+            <div class="card-body">
+                <h1>Matias Neira</h1>
+                <p>Jefe de Neurologia</p>
             </div>
         </div>
-
-        <div class="mas--prof">
-            <a href="login.html">Mas profesionales</a>
+        <div class="card">
+            <img src="img/oscar.jpeg" class="card-img-top" alt="dr-matias-neira">
+            <div class="card-body">
+                <h1 class="card-text">Oscar Sierra</h1>
+                <p class="card-text">Jefe de Gastroenterología</p>
+            </div>
         </div>
-
-    </section>
-    <!-- Fin Nuestro Equipo -->
-
-    <!-- Contacto - Martin Toro -->
-    <section class="contacto" id="contacto">
+        <div class="card">
+            <img src="img/pablo.jpeg" class="card-img-top" alt="dr-pablo-sangenis">
+            <div class="card-body">
+                <h1 class="card-text">Pablo Sangenis</h1>
+                <p class="card-text">Director Clinica Fernandez</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/fotomarcos.webp" class="card-img-top" alt="dr-marcos-scheuermann">
+            <div class="card-body">
+                <h1 class="card-text">Marcos Scheuermann</h1>
+                <p class="card-text">Jefe de Ginecología</p>
+            </div>
+            
+        </div>
+        <div class="card">
+            <img src="img/Martin.png" class="card-img-top" alt="dr-martin-toro">
+            <div class="card-body">
+                <h1 class="card-text">Martín L. Toro Caro</h1>
+                <p class="card-text">Jefe de Ortopedía</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/Sergio.jpg" class="card-img-top" alt="dr-sergio-stefanoni">
+            <div class="card-body">
+                <h1 class="card-text">Sergio Stefanoni</h1>
+                <p class="card-text">Jefe de Cardiologia</p>
+            </div>
+        </div>
+    </div>
+    <div class="mas--prof">
+        <a href="login.html">Más profesionales</a>
+    </div>
+    
+    <!-- Contacto -->
+    <div class="contacto" id="contacto">
         <div class="contacto--titulo">
             <h1>Contacto</h1>
         </div>
@@ -171,132 +215,109 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.102370777464!2d-65.20939048453191!3d-26.83669609650271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1sen!2sar!4v1639011102264!5m2!1sen!2sar"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <ul>
-                    <li><a href=""><i class="fas fa-envelope"></i> info@clinica-fernandez.com</a></li>
-                    <li><a href="login.html"><i class="fas fa-calendar-plus"></i> Agendar turno</a></li>
-                    <li><a href=""><i class="fas fa-phone"></i> +54 (0381) 4502600 </a></li>
-                    <li><a href=""><i class="fas fa-map-marker-alt"></i> 25 de Mayo 450 - Tucuman, Argentina </a></li>
-                    <li><a href=""><i class="fas fa-bus-school"></i> 96, 55, 180, 360, 114</a></li>
-                </ul>
+                  <div class="cizq--info">
+                    <ul>
+                        <li><a href=""><i class="fas fa-map-marker-alt"></i> 25 de Mayo 450 - Tucuman, Argentina </a></li>
+                        <li><a href="mailto:info@clinica-fernandez.com"><i class="fas fa-envelope"></i> info@clinica-fernandez.com</a></li>
+                        <li><a href="login.html"><i class="fas fa-calendar-plus"></i> Agendar turno</a></li>
+                        <li><a href="tel:+5403814502600"><i class="fas fa-phone"></i> +54 (0381) 4502600 </a></li>
+                        <li><a href=""><i class="fas fa-bus-school"></i> 3, 9, 12, 103, 110</a></li>
+                    </ul>
+                </div> 
             </div>
 
             <div class="contacto--der">
                 
-                <form action="">
-                    <label for="">Nombres</label>
-                    <input type="text" name="" id="" placeholder="Nombres">
-                    <label for="">Apellidos</label>
+                 <form action="">                   
+                    <input type="text" name="" id="" placeholder="Nombres">                   
                     <input type="text" name="" id="" placeholder="Apellidos">
-                    <label for="">Telefono</label>
-                    <input type="phone" name="" id="" placeholder="Celular">
-                    <label for="">Email</label>
+                    <input type="phone" name="" id="" placeholder="Teléfono">
                     <input type="email" name="" id="" placeholder="Email">
-
                     <input type="text" name="" id="" placeholder="Asunto">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese su consulta aqui"></textarea>
-                    <button type="submit">Enviar Mensaje</button>
-                </form>
+                    <div class="d-flex justify-content-center">
+                        <button id="boton--cform" type="submit">Enviar Mensaje</button>
+                    </div>
+                </form> 
             </div>
 
 
         </div>
 
-    </section>
+    </div>
 
 
-    <!-- Inicio Footer Marcos  -->
-    <!-- <footer class="footer-CF">
 
-        <div class="container-footer-all">
-            <div class="container-CF">
-                <div class="colum-logo">
-                    <h1>Clinica-Fernandez</h1>
-                    <p>Somos un grupo de profesionales que cuidamos su Salud hasta su ultimo Aliento.</p>
-                    <a href="index.html"><img src="/img/logo-CF.png" logo="clinica_logo_3"></a>
-                </div>
 
-                <div class="container-redes">
-                    <div class="colum-redes">
-                        <h1>Redes Sociales</h1>
-                        <div class="ms_logoRedes d-flex justify-content-between">
-                            <div class="row">
-                                <a href="https://es-la.facebook.com/login/device-based/regular/login/"><img
-                                        class="ms_iconos" src="img/logo-facebook.svg" alt="logo-facebock"></a>
+</div>
 
-                            </div>
 
-                            <div class="row">
-                                <a href="https://www.instagram.com/?hl=es"><img class="ms_iconos"
-                                        src="img/logo-instagram.svg" alt="logo-instagram"></a>
+    
+     <!-- Inicio Footer Marcos - Martin  -->
 
-                            </div>
+     <footer>
 
-                            <div class="row">
-                                <a href="https://twitter.com/?lang=es"><img class="ms_iconos" src="img/logo-twitter.svg"
-                                        alt="logo-Twitter"></a>
+        <div class="container--footer">
 
-                            </div>
-
-                            <div class="row">
-                                <a href="https://web.whatsapp.com/"><img class="ms_iconos" src="img/logo-whatsapp.svg"
-                                        alt="logo-wsp"></a>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="colum-informacion">
-                    <h1>Informacion Contactos</h1>
-                    <div class="row-info">
-                        <img src="img/home-outline.svg" alt="logo-direccion">
-                        <label for="">25 de Mayo 450 - Tucuman - Argentina</label>
-                    </div>
-
-                    <div class="row-info">
-                        <img src="img/call-outline.svg" alt="logo-telefono">
-                        <label class="mt-2">Tel.: 381-5509760</label>
-                    </div>
-
-                    <div class="row-info">
-                        <img src="img/mail-open-outline.svg" alt="logo-email">
-                        <label class="mt-2">clinicafernandez@gmail.com</label>
-                    </div>
-
+            <div class="izq--1">
+                 <a href="index.html"><img src="/img/logo-CF.png" logo="clinica_logo_3"></a>
+                <div class="izq--social">
+                    <ul>
+                        <li><a href="error404.html"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="error404.html"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="error404.html"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="https://github.com/sangenispablo/clinica_fernandezl"><i class="fab fa-github-square"></i></a></li>
+                    </ul>
                 </div>
             </div>
-            <hr>
-        </div>
-        <div class="container-base">
-            <div class="footer-base">
-                <div class="copyrigth">
-                    <p class="m-0 text-white">Todos los derechos reservados &copy; Rolling Code - Grupo 1</p>
-                </div>
 
-                <div class="information">
-                    <a href="error404.html">Información Compañia</a> | <a href="error404.html">Privación y Política</a>
-                    | <a href="error404.html">Términos y Condiciones</a>
-                </div>
+        <div class="subcontainer--fo">
+            <div class="izq--2">
+                <h2>Links de Interés</h2>
+                <ul>
+                    <li><a href=""><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#servicios"><i class="fas fa-briefcase-medical"></i> Servicios</a></li>
+                    <li><a href="login.html"><i class="fas fa-user-md"></i> Doctores</a></li>
+                    <li><a href="#contacto"><i class="far fa-laptop-medical"></i> Contacto</a></li>
+                    <li><a href="login.html"><i class="fas fa-calendar-plus"></i> Agendar Turno</a></li>
+                </ul>
+            </div>
+
+            <div class="medio--1">
+               <h2>Mi cuenta</h2>
+               <ul>
+                   <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión </a></li>
+                   <li><a href="register.html"><i class="fas fa-signature"></i> Registrarse </a></li>
+                   <li><a href="#contacto"><i class="fas fa-question-square"></i> Ayuda mi cuenta</a></li>
+                   <li><a href="mailto:ayuda@clinica-fernandez.com"><i class="fas fa-envelope"></i> Olvidé mi correo </a></li>             
+                   <li><a href="error404.html"><i class="fas fa-lock-alt"></i> Olvidé mi contraseña </a></li>
+                </ul>
+            </div>
+
+            <div class="der--2">
+                <h2>¿Cómo llegar?</h2>
+                <ul>
+                    <li><i class="fas fa-bus-school"></i> 3, 9, 12, 103, 110</li>
+                </ul>
             </div>
         </div>
-
-    </footer> -->
-
-    <!--FIN DE FOOTER MARCOS-->
+    </div>
+        
+    </footer>
+    
 
     <!-- ======= Pablo Sangenis Preload ======= -->
     <div id="preloader"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Pablo Sangenis: en este index vamos a hacer varias cosas -->
     <!-- 1ero ver si hay un usuario logeado en el LS y ocultar o mostrar lo que corresponda -->
     <!-- 2do crear las cards o todo lo que haga falta dinamicamente -->
     <script src="js/index.js" type="module"></script>
-
-</body>
-
+  </body>
 </html>
