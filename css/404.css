@@ -1,0 +1,39 @@
+.o_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.o_message{
+    font-family: 'SF UI Display Semibold';
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0;
+}
+.o_btn{
+    text-decoration: none;
+    font-family: 'SF UI Display Semibold';
+    color: #fff;
+    padding: 0.7%;
+    background-color: #205f92;
+    border-radius: 0.5em;
+}
+.o_CopyRights{
+    font-family: 'SF UI Display Bold';
+}
+
+/* Media Queries */
+@media screen and (max-width: 360px){
+    .os_body img{
+        margin-top: 17%;
+    }
+    .o_message{
+        padding: 1%;
+    }
+    .o_btn{
+        padding: 2%;
+    }
+    .o_CopyRights{
+        font-size: 14px;
+    }
+
+}
