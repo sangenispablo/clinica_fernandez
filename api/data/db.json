@@ -5,38 +5,45 @@
       "email": "admin@gmail.com",
       "password": "1234",
       "id": 1
+    },
+    {
+      "username": "marcos",
+      "email": "marcos@gmail.com",
+      "password": "1234",
+      "id": 2
     }
   ],
   "especialidades": [
-    { 
+    {
       "name": "Cardiologia",
       "image": "../img/especialidades/cardiologia.svg",
       "id": 1
     },
-    { 
+    {
       "name": "Neurologia",
       "image": "../img/especialidades/neurologia.svg",
       "id": 2
     },
-    { 
+    {
       "name": "Ortopedia",
       "image": "../img/especialidades/ortopedia.svg",
       "id": 3
     },
-    { 
+    {
       "name": "Ginecología",
       "image": "../img/especialidades/ginecologia.svg",
       "id": 4
     },
-    { 
+    {
       "name": "Cirugia Dental",
       "image": "../img/especialidades/cirugia.svg",
       "id": 5
-    },{ 
+    },
+    {
       "name": "Gastroenterología",
       "image": "../img/especialidades/gastro.svg",
       "id": 6
-    }    
+    }
   ],
   "doctors": [
     {
